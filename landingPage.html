@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAXLEM LANDING PAGE</title>
+    <!-- <link rel="stylesheet" href="./style (2).css"> -->
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+<style>
+    body{
+        background-color: #3776ab;
+    }
+    .col, .red, .green{
+        color: burlywood;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background-color:#e79e4f4f ;
+        text-align: center;
+        margin: 1rem;
+        border-radius: 1rem;
+        box-shadow: #df2626aa;
+        z-index: 1;
+        box-shadow: 1px 2px 5px rgba(239, 232, 232, 0.568);
+
+    }
+    .green{
+        background-image: url(./image/write.jpg);
+        background-size: cover;
+        /* height: 700px; */
+        padding: 0px 0px 12px 0px;
+        margin-top: 14PX;
+        margin-right: 70px;
+        height: 14rem;
+        width: 20rem;
+        background-position-x: center;
+        background-size: 20rem;
+        float: right;
+    }
+    .container{text-align:center;
+    }
+
+    h1{
+        padding:1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .cardbody{
+        width:auto;
+        background-color: #2125290d;
+    }
+   
+
+    /* paste */
+    #footer{
+  text-decoration: none;
+  padding: 1rem 3rem;
+  background-color: navy;
+  text-align:center;
+  color: #fff;
+  font-size: 1rem;
+  font-family: montserrat-black;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icon{
+  font-size:2rem;
+  color:#fff;
+  padding: 0rem 0.4rem 0rem;
+}
+
+.col-5{
+    overflow-wrap: break-word;
+    line-break: auto;
+
+}
+.col-7{
+    padding: 0px;
+}
+/* book display in hoverNav */
+.img, .col-7 {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  /* left: 20rem; */
+  /* bottom: 7rem; */
+  z-index:-1;
+  transform:rotate(5deg);
+  border-radius: 20%;
+  margin-left: 50px;
+}
+/* hover section */
+
+p{
+  color: #f1f1f1af;
+  font-size: 1.0rem;
+  text-align: center;
+  margin:0.2rem 0rem 0rem;
+  padding-bottom: 0rem;
+  font-weight: bold;
+}
+.nav-logo{ margin: auto; 
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 18px 6px 6px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 6px 6px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: rgb(248, 5, 135);
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 15.33%;
+  padding: 8.55px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px 20px 16px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  /* category color */
+.h3{
+  color: blue;
+}
+.move{
+  /* float: right; */
+  position: absolute;
+  left: 20rem;
+  /* border-color: rgb(137, 137, 148); */
+  border-width: 2rem;
+  border-top-left-radius: 0.2rem;
+  box-shadow: 1px 1px 1px 2px;
+
+}
+
+
+/* hovertest set */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+  border-bottom: 1px double rgba(0, 0, 0, 0.092);
+  box-shadow: 1px 1px 4px rgba(235, 128, 146, 0.335);
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(194, 58, 58);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  text-anchor: middle;
+}
+
+.tooltip .tooltiptextRight {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(194, 58, 58);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  display:inline-flex
+  z-index: 1;
+  top: -5px;
+  left: -25%;
+  text-anchor: middle;
+}
+.tooltip .tooltiptextRight-declaration{
+  visibility: hidden;
+  width: 30rem;
+  background-color: rgb(74, 58, 194);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: -15%;
+  text-anchor: middle;
+}
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+  position: absolute;
+  color: yellow;
+}
+
+.tooltip:hover .tooltiptextRight {
+  visibility: visible;
+  position: absolute;
+  left:0rem ;
+  color: yellow;
+}
+.tooltip:hover .tooltiptextRight-declaration{
+  visibility: visible;
+  position: absolute;
+  left:0rem ;
+  color: yellow;
+  background-image: -webkit-linear-gradient(top, #17add4, #01191a);
+
+}
+
+.col:hover{
+  visibility: visible;
+  color: yellow;
+  background-color: #333;
+  background-image: -webkit-linear-gradient(top, #17add4, #01191a);
+}
+
+
+/* speckCarousel */
+
+  .darken {
+    filter: brightness(0.7);
+  }
+
+  .thumb-bar {
+    overflow: hidden;
+  }
+
+  .thumb-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .displayed-img{
+    /* width:19rem; */
+    width: 19rem;
+    /* height: 1rem; */
+  }
+/* advertisemenet section */
+                    .carousel {
+                        width: 300px; /* Adjust the width according to your needs */
+                        height: 200px; /* Adjust the height according to your needs */
+                        overflow: hidden;
+                        position: relative;
+                        margin: 0 auto;
+                    }
+            
+                    .carousel ul {
+                        width: 500%;
+                        height: 100%;
+                        position: relative;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        animation: carousel-scroll 20s infinite linear;
+                    }
+            
+                    .carousel li {
+                        width: 20%;
+                        height: 100%;
+                        float: left;
+                    }
+            
+                    .carousel img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+            
+                    @keyframes carousel-scroll {
+                        0% { left: 0; }
+                        20% { left: 0; }
+                        25% { left: -100%; }
+                        45% { left: -100%; }
+                        50% { left: -200%; }
+                        70% { left: -200%; }
+                        75% { left: -300%; }
+                        95% { left: -300%; }
+                        100% { left: -400%; }
+                    }
+/* end of adv */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+
+  }
+  
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <a href="./ENG.HTML"><div class="col col-sm-1 col-md-2 col-lg-3 red">
+<h1> <span><h4>ewe <span style="text-transform: lowercase;">to</span></h4></span> english </h1>
+                </div></a>
+                <a href="./fren.html"><div class="col col-sm-1 col-md-2 col-lg-3 gold">
+<h1> <span><h4>ewe <span style="text-transform: lowercase;">to</span></h4></span> french</h1>
+                </div></a>
+                <div class="col col-sm-1 col-md-2 col-lg-3 green">
+<h1 style="padding: 0px 190px 48px 0px; color: black; 
+background-color: #ffffff76; 
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;"> book a lesson </h1>
+                </div>
+            </div>
+        </div>
+
+<!-- isolated navbar -->
+<div class="navbar">
+  <a href="#">
+    <!-- <p class="move">inrested in other languages? yep! yep! yep! we translated EWE to above two languages for you. click the one you want and see.</p> <br>    <p>inrested in other languages? yep! yep! yep!</p></a> <br> -->
+</a>
+<div class="tooltip"> 
+ <a href="#"> Interested? You're welcome </a>
+ <div class="tooltiptext">
+  Intéressé? Je t'en prie
+
+ </div>
+ </div>
+
+
+      <div class="row">
+  </div></div></div></div>
+  
+          
+</div>
+
+
+        
+
+<div class="navbar" fixed>
+    </div>
+    <div class="container cardbody">
+        <div class="row">
+
+<!-- another speck           -->
+<div class="col col-5 cardbody" style="width: 19rem">
+  <div class="navbar" fixed style="background-color:">
+    <h1 style="float:left;">collection</h1>
+  </div>
+
+  <div class="full-img">
+    <img class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" />
+    <div class="overlay"></div>
+    <button class="dark" onclick="toggleDarkenEffect()">Darken Screen</button>
+  </div>
+
+  <div class="thumb-bar">
+    <div class="thumb-container">
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/CASTARD APPLE1.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+      <img style="width: 30%;" class="displayed-img" src="./image/bananan.jpg" alt="Closeup of a blue human eye" onclick="showFullImage(this)" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- end of speck -->
+        <div class="col col-5 cardbody"><div class="navbar" fixed>
+            <div ><img class="nav-logo" src="./fav-icon/favicon.ico" alt="vaXLem logo" >
+              <h1 class="nav-logo" >VAXLEM</h1></div>
+              
+<!-- tooltiptext -->
+              <div class="tooltip">
+                <!-- <a href="">home</a> -->
+                <a href="./dashboard.html ">Home</a>
+                <span class="tooltiptext">femore</span>
+                </div>
+              <div class="tooltip">
+                <a href="./content.html"> Classes</a>
+                <span class="tooltiptextRight">Salle de classe</span>
+                </div>
+              <div class="dropdown ">
+                <div class="tooltip">        
+                <button class="dropbtn tooltip">Table of Contact</a>
+                            <span class="tooltiptext">Tableau des contacts</span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        </div>
+
+                <div class="dropdown-content">
+                  <div class="header tooltip">
+                    <h2>Here is Our <span style="font-style: italic;color: blueviolet; background-color: #f9f9f98a;"> JUICY </span> Menu</h2>
+                  <span class="tooltiptext">
+                    <h2>Voici Notre <span style="font-style: italic;color: ;">JUICY </span>Menu</h2>
+                  </span></div>   
+                  <div class="row">
+                    <div class="column">
+                      <h3 class="h3">Category 1</h3>
+                      <div class="tooltip">
+                      <a href="#">Alphabets</a>
+                      <span class="tooltiptext">
+                        <h6 style="font-style: italic;color: ;">Alphabets </h6>
+                      </span>
+                      </div>
+                      <div class="tooltip">
+
+                    <a href="#">Numerals 1</a>
+
+                        <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">chiffres 1</h6>
+                        </span>
+                        </div>
+
+                        <div class="tooltip">
+                          <a href=#">Animals</a>
+
+                          <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                          <span class="tooltiptext">
+                            <h6 style="font-style: italic;color: ;">Les journées </h6>
+                          </span>
+                          </div>
+
+                      <!-- <button class="btn btn-danger btn-lg btn-dark btn-project contact-heading" type="button" onclick="alert('you are about to BUY VaXLem')" style="margin: 7rem auto;"><i class="fa fa-envelope " style="padding-right: 0.5rem;"></i><a href="./market place.html">download</a> </button>  -->
+            
+                    </div>
+                    <div class="column">
+                      <h3 class="h3">Category 2</h3>
+                      <div class="tooltip">
+                      <a href="#">House-hold Items</a>
+                      <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">Articles ménagers </h6>
+                        </span>
+                        </div>
+                        <div class="tooltip">
+                          <a href="#">Action Words</a>
+                    
+                          <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                          <span class="tooltiptext">
+                            <h6 style="font-style: italic;color: ;">Mots d'action </h6>
+                          </span>
+                        </div>
+                        <div class="tooltip">
+                          <a href="#">Times and Seasons</a>
+
+                          <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                          <span class="tooltiptext">
+                            <h6 style="font-style: italic;color: ;">Horaires et saison </h6>
+                          </span>
+                        </div>
+                        </div>
+                    <div class="column">
+                      <h3 class="h3" >Category 3</h3>
+                      <div class="tooltip">
+                        <a hr#">Foods</a>
+
+                        <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">Nourriture </h6>
+                        </span>
+                        </div>
+                        <div class="tooltip">
+                         <a href="#">Body Parts</a>
+                    
+                          <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                          <span class="tooltiptext">
+                            <h6 style="font-style: italic;color: ;">Parties du corps </h6>
+                          </span>
+                          </div>
+                          <div class="tooltip">
+                            <a style="padding-left: 30px;" >Birds</a>
+                            <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                            <span class="tooltiptext">
+                              <h6 style="font-style: italic;color:;">Des oiseaux </h6>
+                            </span>
+                            </div>
+                      </div>
+                    <div class="column">
+                      <h3 class="h3">Category 4</h3>
+                      <div class="tooltip">
+                        <a href="#"padding:16px 50px;">Days</a>
+                     
+                        <!-- <a style="padding-left: 30px;" href="./tableofcont.html/bird .html" onclick="alert('you are about to BUY VaXLem')">Birds</a> -->
+                        <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color:;">Les journées </h6>
+                        </span>
+                        </div>
+
+                        <div class="tooltip">
+                          <a href="#" style="padding:16px 50px;">Month</a>
+    
+                          <!-- <a style="padding-left: 30px;" href="./tableofcont.html/bird .html" onclick="alert('you are about to BUY VaXLem')">Birds</a> -->
+                          <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                          <span class="tooltiptext">
+                            <h6 style="font-style: italic;color:;">Mois </h6>
+                          </span>
+                          </div>
+                          <div class="tooltip">
+                            <a href="#" style="padding:16px 50px;>Times</a>
+
+                            <a  href="./tableofcont.html/bird .html" onclick="alert('you are about to BUY VaXLem')">Birds</a>
+                            <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                            <span class="tooltiptext">
+                              <h6 style="font-style: italic;color:;">Fois </h6>
+                            </span>
+                            </div>
+                    </div>
+                    <div class="column">
+                      <h3 class="h3">Category 5</h3>
+                      <div class="tooltip">
+                        <a href="#">Symbols</a>
+                                            
+
+                        <!-- <a href="./tableofcont.html/time_and_seasons.html" onclick="alert('you are about to BUY VaXLem')">Time and Season</a> -->
+
+                        <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">Symboles </h6>
+                        </span>
+                      </div>
+                      <div class="tooltip">
+                        <a href="#">Numerals 2</a>
+
+                        <!-- <a href="./tableofcont.html/time_and_seasons.html" onclick="alert('you are about to BUY VaXLem')">Time and Season</a> -->
+
+                        <!-- <a href="./carouselSlide.html"onclick="alert('you are about to BUY VaXLem')">Alphabets</a> -->
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">Chiffres 2 </h6>
+                        </span>
+                      </div>
+                      <div class="tooltip">
+                        <a href="#">Peoples and Places</a>
+
+                
+                        <span class="tooltiptext">
+                          <h6 style="font-style: italic;color: ;">Peuples et lieux </h6>
+                        </span>
+                      </div>
+
+                      </div><div class="column">
+                      <h3 class="h3">WORK BOOK</h3>
+                      <div class="tooltip">
+                        <!-- <a href="./tableofcont.html/people and places.html" onclick="alert('you are about to BUY VaXLem')">People and PLaces</a> -->
+
+                         <a href="#"> BOOK 1</a>
+                      <span class="tooltiptextRight">
+                          <h6 style="font-style: italic;color: ;">LIVRE 1 </h6>
+                        </span>
+                      </div>
+                      <div class="tooltip">
+                        <!-- <a href="./tableofcont.html/people and places.html" onclick="alert('you are about to BUY VaXLem')">People and PLaces</a> -->
+                        <a href="#">BOOK 2</a>
+                        
+                
+                        <span class="tooltiptextRight">
+                          <h6 style="font-style: italic;color: ;">LIVRE 2 </h6>
+                        </span>
+                      </div>
+
+                      <div class="tooltip">
+                        <!-- <a href="./tableofcont.html/people and places.html" onclick="alert('you are about to BUY VaXLem')">People and PLaces</a> -->
+                        <a href="#">SIMPLE SENTENCES</a>
+                        <span class="tooltiptextRight">
+                
+                          <h6 style="font-style: italic;color: ;">PHRASES SIMPLES </h6>
+                        </span>
+                      </div>
+
+                     </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="tooltip">
+              <h1> do you know all this <br>in your language?  <br><br><span><h3>vaxlem has all for you</h3></span></h1>
+
+              <span class="tooltiptextRight-declaration">
+                <h1> savez-vous tout cela <br>dans votre langue ? <br><br><span><h3>vaxlem a tout pour vous</h3></span></h1></div>
+              </span>
+            </div>
+          </div>
+        <div class="col col-7 cardbody"><img class="img" src="./image/5.jpg" alt="" styl="height: 500px; width: 450px; "> 
+        </div>
+        
+        </div>
+
+        <!-- another spec -->
+        
+<!-- advertisement sector         -->
+
+        <div class="col col-3 cardbody" style="width: 1310px;">
+          <div class="col-3" style="display: inline-flex; padding: 0rem; margin: 0rem; border: 0rem;"><!DOCTYPE html>
+            
+<!-- 1 -->
+                <div class="carousel">
+                    <ul>
+                        <li><img src="./image/coconut.jpg" alt="Company 1"></li>
+                        <li><img src="./image/bread.jpg" alt="Company 2"></li>
+                        <li><img src="./image/APPLE.jpg" alt="Company 3"></li>
+                        <li><img src="./image/mouth1.jpg" alt="Company 4"></li>
+                        <li><img src="./image/sit to read.jpg" alt="Company 5"></li>
+                    </ul>
+                </div>
+            
+            </div>
+          <div class="col-3" style="display: inline-flex; padding: 0rem; margin: 0rem; border: 0rem;"><div class="carousel">
+                    <ul>
+                        <li><img src="./image/APPLE.jpg" alt="Company 1"></li>
+                        <li><img src="./image/2-sliced-ripe-guava-July62021-1.jpg" alt="Company 2"></li>
+                        <li><img src="./image/coconut.jpg" alt="Company 3"></li>
+                        <li><img src="./image/sit to read.jpg" alt="Company 4"></li>
+                        <li><img src="./image/mouth1.jpg" alt="Company 5"></li>
+                    </ul>
+                </div>
+<!-- 2 -->
+              </div>
+          <div class="col-3" style="display: inline-flex; padding: 0rem; margin: 0rem; border: 0rem;"><div class="carousel">
+                    <ul>
+                        <li><img src="./image/APPLE.jpg" alt="Company 1"></li>
+                        <li><img src="./image/bread.jpg" alt="Company 2"></li>
+                        <li><img src="./image/2-sliced-ripe-guava-July62021-1.jpg" alt="Company 3"></li>
+                        <li><img src="./image/mouth1.jpg" alt="Company 4"></li>
+                        <li><img src="./image/sit to read.jpg" alt="Company 5"></li>
+                    </ul>
+                </div>
+<!-- 3 -->
+              </div>
+          <div class="col-3" style="display: inline-flex; padding: 1rem; background-image: url(./image/write.jpg); width: fit-content;">
+            <div class="carousel">
+                    <ul>
+                        <li><img src="./image/APPLE.jpg" alt="Company 1">ADVERTISEMENT</li>
+                        </ul>
+                        
+                </div>
+
+              </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer"  >Contact Information
+        <br>
+        <a href="mailto:vaxlem5@gmail.com"><i class="social-icon fa fa-envelope" alt="e-mail"></i></a>
+        <a href="https://www.facebook.com/109590614749846/"><i class="social-icon fa fa-facebook" alt="fbook"></i></a>
+        <a href="https://twitter.com/VaXlem?s=08"><i class="social-icon fa fa-twitter" alt="twitter"></i></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i class="social-icon fa fa-linkedin"></i></a>
+        <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram"></i></a>
+    
+    <p >© <span id="year"> 2023</span> HERMON SEL HAMMAH TETTEY VaxLemStore. <br> All Rights Reserved.
+    </p>
+      </footer>
+    </div>
+    <script>
+      const fullImage = document.querySelector('.full-img img');
+      const thumbContainer = document.querySelector('.thumb-container');
+      const thumbImages = document.querySelectorAll('.thumb-container img');
+      const darkenButton = document.querySelector('.dark');
+      let isDark = false;
+      let scrollPosition = 0;
+    
+      function toggleDarkenEffect() {
+        if (isDark) {
+          fullImage.classList.remove('darken');
+          darkenButton.textContent = 'Darken';
+        } else {
+          fullImage.classList.add('darken');
+          darkenButton.textContent = 'Lighten';
+        }
+        isDark = !isDark;
+      }
+    
+      function showFullImage(element) {
+        fullImage.src = element.src;
+        rideThumbnailCarousel(element);
+      }
+    
+      function rideThumbnailCarousel(element) {
+        const currentIndex = Array.from(thumbImages).findIndex((img) => img === element);
+        const thumbWidth = thumbImages[0].offsetWidth;
+        const containerWidth = thumbContainer.offsetWidth;
+        const visibleThumbs = Math.floor(containerWidth / thumbWidth);
+    
+        if (currentIndex + visibleThumbs > thumbImages.length) {
+          const translateXValue = -(thumbWidth * (thumbImages.length - visibleThumbs));
+          thumbContainer.style.transform = `translateX(${translateXValue}px)`;
+          scrollPosition = translateXValue;
+        } else {
+          const translateXValue = -(thumbWidth * currentIndex);
+          thumbContainer.style.transform = `translateX(${translateXValue}px)`;
+          scrollPosition = translateXValue;
+        }
+      }
+    
+      thumbContainer.addEventListener('mousemove', handleCarouselScroll);
+    
+      function handleCarouselScroll(event) {
+        const scrollSpeed = 2;
+        const containerWidth = thumbContainer.offsetWidth;
+    
+        if (event.clientX > containerWidth - 100 && scrollPosition < 0) {
+          thumbContainer.style.transform = `translateX(${scrollPosition + scrollSpeed}px)`;
+          scrollPosition += scrollSpeed;
+        } else if (event.clientX < 100 && scrollPosition > -(thumbContainer.offsetWidth - containerWidth)) {
+          thumbContainer.style.transform = `translateX(${scrollPosition - scrollSpeed}px)`;
+          scrollPosition -= scrollSpeed;
+        }
+      }
+    </script>
+    <!-- date change script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Get the current year
+          var currentYear = new Date().getFullYear();
+
+          // Find the element in your footer where the year is displayed
+          var yearElement = document.getElementById('year');
+
+          // Update the year in the footer
+          if (yearElement) {
+              yearElement.textContent = currentYear;
+          }
+      });
+  </script>
+</body>
+</html>
