@@ -1,0 +1,460 @@
+
+body{
+ background-color: rgba(210, 189, 148) 
+  
+}
+.c{
+    background-color: red;
+    background-image: url(./images/tunuhomes5.PNG);
+    height: 200px;
+}
+.d{
+
+    /* background-color: rgba(210, 189, 148) */
+    /* rgba(255, 0, 0, 0.463) */
+    /* ; */
+    text-align: center;
+}
+.e{
+    background-color: rgba(255, 0, 0, 0.92);
+    width: 50%;
+    height: auto;
+    
+}
+
+.ee{
+    background-color: rgba(255, 0, 0, 0);
+    width: 50%;
+    height: auto;
+    /* text-align: left; */
+    text-align:start;
+}
+
+.col-5, .col-7{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    /* left: 3rem; */
+    left: 1rem;
+    /* margin: 1rem; */
+    margin: -1rem;
+}
+/* on test */
+.first-div{
+    margin-bottom: 10px;
+    display: block;
+    bottom: 1000px;
+    background-color: rgb(210, 189, 189);
+    
+    
+}
+.first-image{
+    width: 100%;
+    margin: 0px;
+}
+
+
+
+
+.row{
+    display: flex;
+    text-align: center;
+    /* margin: 0 30px 0 50px; */
+}
+/* another carousel edit */
+.edit{
+    margin: 0 0 0 100px ;
+  }
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: 2s;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* cards outline */
+.children{
+    display: inline-block;
+}
+.content {
+    margin: 0px;
+  }
+
+  .projects div {
+    /* margin: 20px; */
+    width: 250px;
+
+}
+
+
+.projects h3 {
+    text-transform: uppercase;
+}
+.cards-all {
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+
+   }
+
+    .cards-all li {
+        position: relative;
+        /* right: 90px; */
+        overflow: hidden;
+        
+    }
+
+   
+    .cards-all li img {
+        width: 220px;
+        height: 220px;
+        margin: 10px;
+        transition: 2s;
+        position: relative;
+        right: 0rem; /* of img */
+    }
+    /* .card-content {
+        margin: 20px;
+      } */
+
+      .card-content {
+        margin: 20px;
+        position: relative;
+        right: 1rem;
+      }
+
+/* hovers      */
+.cards li:hover img {
+    transform: scale(1.5);
+   
+  }
+
+  .cards li:hover h4 {
+    margin-top: 50px;
+  }
+
+/* h1:hover {
+    margin-top: 50px;
+    transform: scale(1.5);
+    text-transform: uppercase;
+    font-style: italic;
+    color: darkred;
+  } */
+  
+  .cards li h4 {
+    text-transform: uppercase;
+    position: relative;
+    right: 1rem;
+  }
+
+  
+  .cards-all li:hover img {
+    transform: scale(1.5);
+    
+  }
+  .cards-all li:hover h4 {
+    margin-top: 50px;
+  }
+  
+  .cards-all li h4 {
+    text-transform: uppercase;
+  }
+
+/* top container  and  navigation butts*/
+.bottomy-container{
+    background-color: rgba(255, 255, 0, 0.353);
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    /* position: relative; */
+    /* right: auto; */
+    /* bottom: 3500px; */
+    /* bottom: 3900px; */
+    /* left:auto; */
+    margin:3rem 0rem 0rem 3rem;
+    border-radius:100%;
+    text-transform: capitalize;
+    line-height: 10.5px;
+    /* z-index: -3; */
+
+}
+
+/* tunu in round details*/
+/* p{
+ 
+background-color:rgba(0, 0, 139, 0.389); color: white; line-height: 40px; margin: 4px;
+
+} */
+/* p tag edition in the people */
+#p {
+    background-color: rgba(0, 0, 139, 0.389);
+    color: white;
+    line-height: 40px;
+    margin: 4px;
+}
+/* background green history */
+/* .pp{
+    background-color:rgba(0, 128, 0, 0.527);
+    padding: 0 0 0 2px;
+    color: black;
+    width: 365px;
+    } */
+.pp{
+    background: -webkit-linear-gradient(45deg, red, green);
+    background: -moz-linear-gradient(45deg, red, green);
+    background: -o-linear-gradient(45deg, red, green);
+    background: -ms-linear-gradient(45deg, red, green);
+    background: linear-gradient(45deg, rgb(11, 11, 11), green);
+    margin: 1rem 1rem 4rem;
+    padding: 1rem;
+    text-align: justify;
+    line-height:30px ;
+    }
+
+
+
+
+
+.tunu{
+    font-size:85px;
+    padding-top: 0px;
+}
+
+#land-color{
+    text-transform: uppercase;
+    font-style: oblique;
+    color: blueviolet;
+}
+
+.p{
+    font-size: 20px;
+   padding: 0;
+   margin: 0; 
+   color:rgb(5, 5, 5);
+}
+
+.notwo{
+   font-size: 40px;
+   /* color:rgb(227, 252, 7); */
+
+}
+.fami-btn { 
+    /* width: 55px; */
+    height: 55px;
+    border-radius: 15px;
+    border: 0px;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+  text-align: center; 
+  margin: 2px 2px 0px 0px;
+  
+  }
+  button:hover {
+    background-color: rgb(188, 225, 24);
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in;
+}
+
+button {
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.018);
+    border: 0px;
+    background-color:red;
+    cursor: pointer; 
+    color: white; 
+    /* width: 5px; */
+    
+    background-color:rgb(62, 138, 138) ;cursor: pointer; color: white; width: 140px;
+}
+/* notice about the childre in a nav */
+.notice{
+    border: 1px solid skyblue;
+    border-radius: 1rem;
+    margin: 5rem auto;
+    padding: 0 1rem;
+    width: 10rem;
+    float: left;
+    position: fixed;
+    background-image: linear-gradient(rgba(255, 225, 0.868), white, blue);
+    background-image: -ms-linear-gradient(rgba(255, 225, 0.868), white, blue);
+    background-image: -webkit-linear-gradient(rgba(255, 225, 0.868), white, blue);
+    background-image: -moz-linear-gradient(rgba(255, 225, 0.868), white, blue);
+    
+}
+/* tunu logo */
+.logo{
+    height: 45px;
+    width: 100px;
+    margin: 0 10px 10px 1px;
+    border-radius: 10px;
+    padding: auto 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.but-Children{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.868);}
+.but-home{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);}
+.but-theLand{width: 80px; padding: 10px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;}
+.but-activities{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.868);}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {/* top container  and  navigation butts*/
+    .bottomy-container{
+        /* background-color: rgba(255, 255, 0, 0.353); */
+        
+        margin:5rem 0rem 0rem 16rem;
+        position: absolute;
+        left: 26rem;
+        line-height: 30.5px;
+
+    }
+    .tunu{
+        font-size:85px;
+        padding-top: 0px;
+    }
+
+
+}
+    @media screen and (max-width: 600px) {
+    .but-activities{width: 60px; padding: 0.5px; background-color:rgb(175, 7, 132); margin:0.5px;cursor: pointer; color: rgba(255, 255, 255, 0.868); font-size: 11px; letter-spacing: 1px;}
+    .but-theLand{ width: 60px; padding: 0.5px; background-color:rgb(175, 7, 132); margin:0.5px;cursor: pointer; color: rgba(255, 255, 255, 0.868); font-size: 11px; letter-spacing: 1px;}
+    .but-Children{width: 60px; padding: 0.5px; background-color:rgb(175, 7, 132); margin:0.5px;cursor: pointer; color: rgba(255, 255, 255, 0.868); font-size: 11px; letter-spacing: 1px;}
+    .but-home{width: 60px; padding: 0.5px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.868); font-size: 11px; letter-spacing: 1px;}
+    /* style=" width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);" */
+.notice{
+        margin: 4.3rem 0 0 0.1rem;
+        width:8rem ;
+        font-size: 14px;
+        z-index: 2;
+
+    }
+    .bottomy-container{
+        /* background-color: rgba(255, 255, 0, 0.353); */
+/* the tunu in round yellow     */
+        /* margin:5rem 0rem 0rem 0rem; */
+        margin:4rem 0rem 0rem 0rem;
+        position: absolute;
+        /* left: 6rem; */
+        left:4rem;
+        line-height: 30.5px;
+
+    }
+
+    .cards-all {
+        /* display: flex; */
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+        list-style: none;
+    
+        position: relative;
+        right: 100px;
+        /* right: 1rem; */
+    
+    }
+    
+        .cards-all li {
+            position: relative;
+            /* right: 90px;  */
+             /* position of img */
+            left: 6rem;
+            overflow: hidden;
+            
+        }
+    
+       
+        .cards-all li img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            /* transition: 2s; */
+            position: relative;
+            right: 1rem;
+        }
+        .cards li h4 {
+            /* text-transform: uppercase; */
+            position: relative;
+            right: 2rem;
+          }
+
+/* tunu land color details */
+#land-color{
+    font-size: 18px;
+    /* font-size: 38px; */
+    line-height: 30.5px;
+    padding-top:1px;
+}
+
+/* another carousel edit */
+/* .edit{
+    margin: 0;
+  } */
+}
+.edit{
+    width: 300px;
+    height: auto;
+    position: relative;
+    /* left: 0; */
+    left: 0em;
+    margin: 50px 0 0 0px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    margin-top:20px;
+    box-shadow: 1px 1px 2px yellow;
+}
+
+@media screen and (max-width: 700px) {
+
+    
+    .notice{
+        margin: 33.3rem 0 0 0.1rem;
+        width:18rem ;
+        font-size: 14px;
+        z-index: 2;
+    }
+
+    /* tunu round yellow logo */
+    
+    .tunu{
+        font-size:84px;
+        padding-top: 0px;
+    }
+
+    .bottomy-container{
+        /* background-color: rgba(255, 255, 0, 0.353); */
+/* the tunu in round yellow     */
+        /* margin:5rem 0rem 0rem 0rem; */
+        margin:4rem 0rem 0rem 0rem;
+        position: absolute;
+        left: 6rem;
+        line-height: 30.5px;
+
+    }
+/* another carousel edit */
+.edit{
+    margin: 0;
+  }
+
+.edit{
+    width: 300px;
+    height: auto;
+    position: relative;
+    /* left: 0; */
+    left: 0em;
+    /* margin: 50px 0 0 45px; */
+    border-radius: 10px;
+    border: 1px solid blue;
+    margin-top:20px;
+    box-shadow: 1px 1px 2px yellow;
+}
+
+}
