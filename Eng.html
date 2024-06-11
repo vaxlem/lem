@@ -33,6 +33,9 @@
     .clear{
         clear:both;
       }  
+
+      /* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
 /* audio coloring */
  audio::-webkit-media-controls-play-button,
  audio::-webkit-media-controls-panel {
@@ -1233,7 +1236,7 @@ tryings
       <hr style=" border-width: 150px; border-style: dotted; padding: 0px; border: 0px; ">
 </div>
 
-<a href="./about.html"><i class="fa fa-info-circle  fa-1x icon" aria-hidden="true"></i>
+<a href="./ENG1.html"><i class="fa fa-info-circle  fa-1x icon" aria-hidden="true"></i>
   About</a>
 <a href="./landingPage.html"><i class="fa fa-arrow-circle-left fa-1x icon" aria-hidden="true"></i>Go Back
 </a>
@@ -1453,3 +1456,91 @@ function closeNav() {
 </body>
 
 </html>
+
+
+Va Xlem <vaxlem5@gmail.com>
+7:42 PM (9 minutes ago)
+to me
+
+Here's a basic CSS structure for a mobile-first approach:
+
+*Mobile Styles (default styles)*
+
+- styles.css
+```
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Mobile-specific Styles */
+.container {
+  max-width: 480px; /* or any other mobile-friendly width */
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.main-content {
+  padding: 1em;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+```
+
+*Media Queries for larger screens*
+
+- styles.css (continued)
+```
+/* Tablet Styles (min-width: 481px) */
+@media (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+  /* other tablet-specific styles */
+}
+
+/* Desktop Styles (min-width: 769px) */
+@media (min-width: 769px) {
+  .container {
+    max-width: 960px;
+  }
+  /* other desktop-specific styles */
+}
+
+/* Large Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+  }
+  /* other large desktop-specific styles */
+}
+```
+In this structure:
+
+- The mobile styles are defined first, and they serve as the default styles.
+- The media queries for larger screens (tablet, desktop, and large desktop) are defined later, and they override the mobile styles when the screen size meets the specified minimum width.
+- Each media query block contains styles that are specific to that screen size range.
+
+Remember to adjust the values and styles according to your specific design requirements.
