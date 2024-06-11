@@ -48,17 +48,6 @@
       font-family:cursive;
       background-color: none;
     }
-
-
-/* MEDIAQUERRY */
-/* @media screen and (min-width: 1025px){
- body { */
- @media screen and (max-width:320px){
-  body {
-     font-size: 16px;
- }
-
-
 /*width header column */
       .header{
         text-align:center;           
@@ -274,7 +263,6 @@
         background-size: 18rem;
         text-align: center;
         position: relative;
-        width: 80%;
         left: 2.2rem;
         border-bottom-right-radius:10px;
         border-bottom-left-radius:10px;
@@ -283,7 +271,7 @@
         box-shadow: 2px 4px 2px rgb(86, 4, 239);
       }
 
-      /* .col33{width:80%;} */
+      .col33{width:80%;}
       .desc-position{
         padding:1rem 0rem 0rem 0rem ;
       }
@@ -619,12 +607,31 @@ div[toC] {
   margin:1.2rem;
   color:rgba(255, 217, 0, 0.801);
 }
+
+
+/* MEDIAQUERRY */
+@media screen and (min-width: 1025px){
+ body {
+     font-size: 18px;
  }
 
-
+ 
  /* .............................. */
  
-
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
 
 /* xxxxxxxxxxx--------------xxxxxxxxxxx */
 /* Extra small devices (phones, 600px and down) */
@@ -637,20 +644,7 @@ div[toC] {
 /* @media only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {.  */
-/* For desktop: */
-/* .col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}..} */
+/* @media only screen and (min-width: 992px) {...} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
@@ -755,23 +749,21 @@ div[toC] {
       </div>
       <div class="column">
       <div class row>
-
-    <!-- to correct width with data with col-345 @ mediaquerry     -->
-          <div class="col33 col-5 discription" style="background-image: url(./image/PAWPAW.jpg); widt: 80%;">
+          <div class="col33 col-5z  discription" style="background-image: url(./image/PAWPAW.jpg); widt: 80%;">
             <!-- <img class="degimage" src="./image/1.png" alt=""> -->
           </div>
 
-          <div class="col33 col-4  discription" style="background-color: blueviolet; widt: 80%;">
+          <div class="col33 col-4z  discription" style="background-color: blueviolet; widt: 80%;">
             <div class="desc-position">
-              <i class="fa fa-hand-pointer-o fa-2x" style="padding-bottom: 1rem; color: black;" aria-hidden="true"></i>
-              <h5 style="color: yellow; font-weight: bold;">Nu kae nye esia?</h5> 
-            <h3 style="padding: 22px 0px 0px ;"> What is this ?</h3>
+              <i class="fa fa-hand-pointer-o fa-4x" style="padding-bottom: 2rem;" aria-hidden="true"></i>
+              <h2>Nu kae nye esia?</h2>
+            <h1>Qu'est-ce que c'est ?</h1>
             </div>
           </div>
-          <div class="col33 col-3  discription" id="answer">
-            <h4 >ŋuɖoɖo</h4>
-            <h4>Response</h4>
-            <h2 style=" background-color: rgba(255, 255, 0, 0.059);"> <h5 style="padding-top: 11px;"> Aɖiba -- Papaye </h5></h2>
+          <div class="col33 col-3z  discription" id="answer">
+            <h4>ŋuɖoɖo</h4>
+            <h4>répondre</h4>
+            <h2 style="background-color: rgba(255, 255, 0, 0.059);">Aɖiba --- Papaye</h2>
           </div>
       </div>
   </div>
