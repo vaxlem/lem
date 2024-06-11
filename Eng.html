@@ -59,6 +59,7 @@
         width: 44.5rem;   
         /* width: 31.5rem; */
         /* width: 42.375rem;      */
+        width: 34.135rem;
         /* Adjust the width to take the remaining space */
         background-color: #0d0d0b5e;
         border: 1px solid red;
@@ -235,18 +236,19 @@
 
       }
 
-
+/* degimage section width */
 
 /* grid col */
       .container {
         display: flex;
       }
 
-      .column {
+      .column{
         flex: 1; /* Equal width for both columns */
         background-color: #f0f0f0;
         padding: 10px;
         margin-right: 10px; /* Gap between columns */
+        width: 34.135rem;;
       }
 
       .column:last-child {
@@ -261,6 +263,7 @@
         background-size: 18rem;
         text-align: center;
         position: relative;
+        width: 80%;
         left: 2.2rem;
         border-bottom-right-radius:10px;
         border-bottom-left-radius:10px;
@@ -268,6 +271,8 @@
         border-top-left-radius:10px;
         box-shadow: 2px 4px 2px rgb(86, 4, 239);
       }
+
+      /* .col33{width:80%;} */
       .desc-position{
         padding:1rem 0rem 0rem 0rem ;
       }
@@ -332,11 +337,38 @@
                 padding-left: 0.3rem;
                 margin-top:11rem;
         } 
-         /* put together forn combination      */
+/* degimage section width */
+
+div[toC] {
+    background-image: url(./image/1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin-top: 5rem; */
+    height: auto;
+    width: 100%;
+    background-position-x: center;
+    /* background-size: 18rem; */
+    text-align: center;
+    position: relative;
+    left: 0.2rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 4px 2px rgb(86, 4, 239);
+}
+        .degimage {
+    width: 280px;
+    margin-top: 5rem;
+}
+        /* .degimage{width:100%; height:100%} */
+/* put together forn combination      */
       .table-data-width,.table-header{
         /* width:16rem;        */
         width:14.28rem;
         /* width: 10rem; */
+        width: 10.8rem;
                text-align:center;
               }
 
@@ -347,8 +379,8 @@
         left:0.5rem ;
         /* left:15rem ; */
         top: 10rem;
-        width: 44rem;
-        /* width: 31.5rem; */
+        /* width: 44rem; */
+        width: 34.135rem;        /* width: 31.5rem; */
         /* width: 42.375rem; */
         /* left:239px; */
     }
@@ -583,23 +615,11 @@
  body {
      font-size: 18px;
  }
-
- }
+}
+ 
  /* .............................. */
  
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
 
 /* xxxxxxxxxxx--------------xxxxxxxxxxx */
 /* Extra small devices (phones, 600px and down) */
@@ -612,7 +632,20 @@
 /* @media only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
+@media only screen and (min-width: 992px) {. 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}..}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
@@ -711,24 +744,26 @@
 <div class="container">
   <!-- <div id="searchResults"></div> -->
 
-      <div class="column">
-        <img class="degimage" src="./image/1.png" alt="">
+      <div class="column" toc>
+        <img class="degimage" src="./image/1.png" alt="boy reading">
 
       </div>
       <div class="column">
       <div class row>
-          <div class="col-5 discription" style="background-image: url(./image/PAWPAW.jpg);">
+
+    <!-- to correct width with data with col-345 @ mediaquerry     -->
+          <div class="col33 col-5 discription" style="background-image: url(./image/PAWPAW.jpg); widt: 80%;">
             <!-- <img class="degimage" src="./image/1.png" alt=""> -->
           </div>
 
-          <div class="col-4 discription" style="background-color: blueviolet;">
+          <div class="col33 col-4  discription" style="background-color: blueviolet; widt: 80%;">
             <div class="desc-position">
               <i class="fa fa-hand-pointer-o fa-4x" style="padding-bottom: 2rem;" aria-hidden="true"></i>
               <h2>Nu kae nye esia?</h2>
             <h1>Qu'est-ce que c'est ?</h1>
             </div>
           </div>
-          <div class="col-3 discription" id="answer">
+          <div class="col33 col-3  discription" id="answer">
             <h4>ŋuɖoɖo</h4>
             <h4>répondre</h4>
             <h2 style="background-color: rgba(255, 255, 0, 0.059);">Aɖiba --- Papaye</h2>
