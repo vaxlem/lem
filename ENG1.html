@@ -245,6 +245,10 @@ img[bongoimage]{
       h4{text-align: center;
         color: chocolate;
       }
+
+      .small{
+  font-size: smaller;
+}
 /* end of description */
 
 
@@ -346,7 +350,7 @@ img[bongoimage]{
         /* this 100 gives header full to corespond */
         width: 100%;
         /* Adjust the width to take the remaining space */
-        background-color: #0d0d0b5e;
+        background-color: #0d0d0b5e;  
         border: 1px solid red;
         border-bottom-right-radius:10px;
         border-bottom-left-radius:10px;
@@ -408,7 +412,8 @@ div[toC] {
     box-shadow: 2px 4px 2px rgb(86, 4, 239);
 }
         .degimage {
-    width: 280px;
+    /* width: 280px; */
+    width: 230px;
     margin-top: 5rem;
 }
 
@@ -502,12 +507,13 @@ div[toC] {
         <!-- hamburger --> 
         <div  class="col"><!-- fisrt -->
     <!-- <p fix="true"> The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:  WELCOME TO VAXLEM </p> -->
-    <h1 style="display: noe; ont-size:1rem; #f4e2f6; color:rgba(0, 0, 128, 0.41); olor:#5021ff;
+    <h1 style="display: noe; ont-size:1rem; background-color:  #f4e2f6; color:rgba(0, 0, 128, 0.41); olor:#5021ff;
     margin:0 auto 0 auto;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
     'Helvetica Neue', sans-serif;">
     WELCOME TO VAXLEM 
     </h1>
-</div>
+<!-- background-color of vaxlem  is here-->
+  </div>
 <!-- menu -->
         <p class="p"><span class="pn" style="float: right; font-size:15px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> 
           <!-- Cliquez sur Ouvrir pour sélectionner une rubrique ci-dessous. -->
@@ -663,7 +669,7 @@ clear.
   Lorem ipsum am div hermon<BR></BR><BR></BR>
   
 <!-- the display and question section -->
-<div class="" style="width:33.135rem;">
+<div class="" style="width:33.135rem; display: none;">
   <div class="row" style="background-color: #fff;color: black; width: 100%; padding-right: ;">
   <div class="col-6" style="display: none; background-color: red; width: 50% ;">
     <!-- cover-image -->
@@ -706,6 +712,53 @@ clear.
 </div>
 
 
+
+
+
+<!-- checking this -->
+<!-- the display and question section -->
+<div class="" style="width: 100%;">
+  <div class="row" style="background-color: #fff;color: black; width: 100%; padding-right: ;">
+  <div class="col-6" style="display: none; background-color: red; width: 50% ;">
+    <!-- cover-image -->
+    <div class="" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 100%; height: auto; margin: 20px auto; left:0px ">
+      <!-- <div class="" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 50%; height: 140px; margin: 20px auto; left:0px "> -->
+
+      <img class="degimag" src="./image/1.png" alt="cover-image" width="500" height="600"  style="width:100%; height: 100%; vertical-align: middle;">
+    
+    </div>
+  </div>
+<!-- to c -->
+<div toC="true" class="col-6" style="background-image: url(.//image/1.png);  text-align: center; width: 50%; height: auto; left:0px;  " >
+  <img class="degimage" src="./image/1.png" width="280" height="270" alt="">
+</div>
+
+  <!-- 3bar -->
+  <div class="col-6" style="background-color: rgb(34, 103, 22); width:50% ; padding-right: 0.2rem;">
+  <div class row>
+    <div class="col-5 discription" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 70%; height: 120px; margin: 20px auto; left:0px; padding-top: ; " >
+      <!-- <img class="degimage" src="./image/1.png" alt=""> -->
+    </div>
+
+    <div class="col-4 discription" style="background-color: blueviolet;  text-align: center; width: 90%; height: 140px; margin: 20px auto; left: 0px;">
+      <div class="desc-position">
+        <i class="fa fa-hand-pointer-o fa-1x" style="padding-bottom: 0.3rem; padding: 0px 0px;" aria-hidden="true"></i>
+        <h2 class="small" >Nu kae nye esia?</h2>
+      <h1 class="small" >What Is this?</h1>
+      </div>
+    </div>
+    <div class="col-3 discription" id="answer" style=" text-align: center; width: 70%; height: 140px; margin: 20px  auto; left: 0px; padding-bottom: 4px;">
+      <h5 class="small" >ŋuɖoɖo</h5>
+      <h5 class="small" >response</h5>
+      <h3 class="small"  style="background-color: rgba(255, 255, 0, 0.059);">Aɖiba --- Pawpaw</h3>
+    </div>
+
+
+  
+  </div> 
+</div>
+</div><!-- row -->
+</div>
 
 <!-- tables section part 3 -->
 <hr id>
