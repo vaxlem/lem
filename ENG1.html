@@ -133,11 +133,10 @@ hr[id] {
         /* border-color: #111111d7; */
         border-radius: 10px;
         /* background-color: rgba(6, 77, 85, 0.954); */
-        box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);height: 4rem;
+        box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
       }
 
 .table-column[bgc]{background-color: rgba(6, 77, 85, 0.954);
-  height: 4rem
   ;}
 
 /* where the header width control is */
@@ -423,8 +422,7 @@ img[bongoimage]{
         margin: 0 auto 0 auto;
         /* overflow-x: hidden; */
         color: rgba(0, 255, 251, 0.762);
-        /* added */
-        height: 15rem; 
+         
     }
 hhermon
 
@@ -539,7 +537,14 @@ padding-top: 10px;
   /* a{
     text-decoration: initial;
   } */
+.p1{
+  font-family: monsterrat-bold;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  /* font-weight: bold; */
+  margin: 3rem 0rem;
 
+}
 
 /* the pink sidenav column */
 .content {background: pink;
@@ -588,22 +593,6 @@ padding-top: 10px;
   background-color: rgb(46, 3, 3);
   box-shadow: 0rem 2rem 2rem 1rem royalblue;
   
-}
-.container-flui{
-  text-align: center;
-  background-color: rgb(46, 3, 3);
-  box-shadow: 0rem 2rem 2rem 1rem royalblue;
-  margin: auto 10rem;
-  padding: 1rem;
-}
-.p1{
-  
-  font-family: monsterrat-bold;
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  /* font-weight: bold; */
-  margin: 3rem 0rem;
-  color:rgba(248, 214, 23, 0.672);
 }
 
 /* end of grid section */
@@ -692,7 +681,7 @@ padding-top: 10px;
 <div class="side off nav">
     
     <div><!-- ends at sidenav  true?-->
-      <div class="header" style="display: non;">
+      <div class="header">
         <!-- hamburger --> 
         <div  class="col"><!-- fisrt -->
     <!-- <p fix="true"> The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:  WELCOME TO VAXLEM </p> -->
@@ -704,7 +693,7 @@ padding-top: 10px;
 <!-- background-color of vaxlem  is here-->
   </div>
 <!-- menu -->
-        <p class="p"><span class="pn" style="float: right; font-size:15px;cursor:pointer; display: n;" onclick="openNav()">&#9776; Menu</span> 
+        <p class="p"><span class="pn" style="float: right; font-size:15px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> 
           <!-- Cliquez sur Ouvrir pour sélectionner une rubrique ci-dessous. -->
         </p>
 <!-- end of menu -->
@@ -757,7 +746,7 @@ padding-top: 10px;
       </div>
 <!-- header details -->
 <div class=" table-column" bgc="true">
-<table class="HPOSITION" BGPOSTION="true">
+<table class="HPOSITION">
 <tbody>
   <tr>
       <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Language</h1></td>
@@ -1392,7 +1381,7 @@ HHerMON
 
 <!-- the contacts column of call to action -->
 
-<div class="container-fluid" style="display: none;">
+<div class="container-fluid">
   <div class="row">
     <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
       <p class="p1">j'adore le livre essayer d'obtenir une copie</p>
@@ -1444,9 +1433,9 @@ HHerMON
 
 
 checking
-<div class="container-flui">
+<div class="">
 <!-- hardcopy -->
-  <div class="col col-sm-12 col-md-6 col-lg-6 p1" style="background-color: blac; height-500px;">
+  <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
     <p class="p1">j'adore le livre essayer d'obtenir une copie</p>
           <img class="images" src="./image/5.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
   </div>
@@ -1456,7 +1445,7 @@ checking
   <img class="images" src="./image/3.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
   <hr>
 <!-- video -->
-  <div class="col col-sm-12 col-md-6 col-lg-6 p1" style="height-500px; background-color: old;">
+  <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: old;">
     <p class="p1">la version électronique est super et interactive, abonnez-vous aujourd'hui</p>                
               <video id="video-frame" width="100%" height= "100%" controls>
                 <source src="./image/VID-20230213-WA0025kids liabray tablet.mp4" type="video/mp4">
@@ -1464,7 +1453,7 @@ checking
   </div>
 
 <!-- call to action -->
-  <div class="col col-sm-12 col-md-6 col-lg-6 p1" style="background-color: lack; height-500px">
+  <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px">
     <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px;">
       <!-- <p class="p1">download E-book</p> -->
       <!-- <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true"><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></i></a> -->
@@ -1475,7 +1464,7 @@ checking
 end of this trial
 
 <!-- again in pinck  -->
-<div class="call-to-action col col-2 p1" style="display: none;">
+<div class="call-to-action col col-2">
   <div class="">
     <!-- hardcopy -->
       <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
