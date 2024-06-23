@@ -608,6 +608,37 @@ padding-top: 10px;
 }
 
 /* end of grid section */
+
+
+
+/* links section */
+
+.container-fluid[link] {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(46, 3, 3);
+    box-shadow: 0rem 2rem 2rem 7rem royalblue;
+}
+
+p[link] {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.social-icon[link] {
+    margin: 1.2rem;
+    color: rgba(255, 217, 0, 0.801);
+}
+
+.fa[link] {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* end oflinks section */
+
 /* MEDIAQUERRY */
 @media screen and (min-width: 1025px){
  body {
@@ -1478,20 +1509,58 @@ Speak</button>
 
 
 
+
+<!-- again in pinck  -->
+<div class="call-to-action col col-2 p1" style="display: none;">
+  <div class="">
+    <!-- hardcopy -->
+      <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
+        <p class="p1">j'adore le livre essayer d'obtenir une copie</p>
+              <img class="images" src="./image/5.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
+      </div>
+      <hr>
+    <!-- e-book -->
+      <p class="p1">la version électronique est super et interactive, abonnez-vous aujourd'hui</p>
+      <img class="images" src="./image/3.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
+      <hr>
+    <!-- video -->
+      <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: old;">
+        <p class="p1">la version électronique est super et interactive, abonnez-vous aujourd'hui</p>                
+                  <video id="video-frame" width="100%" height= "100%" controls>
+                    <source src="./image/VID-20230213-WA0025kids liabray tablet.mp4" type="video/mp4">
+                  </video>
+      </div>
+    
+    <!-- call to action -->
+      <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px">
+        <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px;">
+          <!-- <p class="p1">download E-book</p> -->
+          <!-- <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true"><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></i></a> -->
+        </div> 
+        <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgba(248, 214, 23, 0.672); padding:1px ; margin-left: 2rem;" aria-hidden="true"></i><BR></BR><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></a>
+      </div>
+    </div>
+</div>
+<!-- end  of try-again -->
+
+
+
+
+
 hhermMON
 
 <!-- ABOUT LINKS SECTION -->
 <hr>
-<div class="discriptio  container-fluid">
+<div class="discriptio  container-fluid" link="true">
   <footer id="footer">Coordonnées
     <br>
-      <a href="mailto:vaxlem5@gmail.com"><i class="social-icon fa fa-envelope" alt="e-mail"></i></a>
-      <a href="https://www.facebook.com/109590614749846/"><i class="social-icon fa fa-facebook" alt="fbook"></i></a>
-      <a href="https://twitter.com/VaXlem?s=08"><i class="social-icon fa fa-twitter" alt="twitter"></i></a>
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i class="social-icon fa fa-linkedin"></i></a>
-      <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram"></i></a>
+      <a href="mailto:vaxlem5@gmail.com"><i class="social-icon fa fa-envelope"  link="true" alt="e-mail"></i></a>
+      <a href="https://www.facebook.com/109590614749846/"><i class="social-icon fa fa-facebook" link="true" alt="fbook"></i></a>
+      <a href="https://twitter.com/VaXlem?s=08"><i class="social-icon fa fa-twitter" link="true" alt="twitter"></i></a>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i link="true" class="social-icon fa fa-linkedin"></i></a>
+      <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram" link="true"></i></a>
     
-  <p>© <span id="year">2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLemStore. <br> Tous les droits sont réservés.
+  <p link="true" >© <span id="year">2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLemStore. <br> Tous les droits sont réservés.
   </p>
     </footer>
 </div>
@@ -1586,39 +1655,6 @@ hhermMON
 
 </div>
 <!-- end of accordion -->
-
-<!-- again in pinck  -->
-<div class="call-to-action col col-2 p1" style="display: none;">
-  <div class="">
-    <!-- hardcopy -->
-      <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
-        <p class="p1">j'adore le livre essayer d'obtenir une copie</p>
-              <img class="images" src="./image/5.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
-      </div>
-      <hr>
-    <!-- e-book -->
-      <p class="p1">la version électronique est super et interactive, abonnez-vous aujourd'hui</p>
-      <img class="images" src="./image/3.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
-      <hr>
-    <!-- video -->
-      <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: old;">
-        <p class="p1">la version électronique est super et interactive, abonnez-vous aujourd'hui</p>                
-                  <video id="video-frame" width="100%" height= "100%" controls>
-                    <source src="./image/VID-20230213-WA0025kids liabray tablet.mp4" type="video/mp4">
-                  </video>
-      </div>
-    
-    <!-- call to action -->
-      <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px">
-        <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px;">
-          <!-- <p class="p1">download E-book</p> -->
-          <!-- <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true"><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></i></a> -->
-        </div> 
-        <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgba(248, 214, 23, 0.672); padding:1px ; margin-left: 2rem;" aria-hidden="true"></i><BR></BR><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></a>
-      </div>
-    </div>
-</div>
-<!-- end  of try-again -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
