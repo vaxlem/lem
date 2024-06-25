@@ -357,7 +357,7 @@ img[bongoimage]{
                /* color: rgba(0, 255, 251, 0.762); */
               }
 
-    .reduction{
+.reduction{
       font-size:2rem;
 /* clear */
       font-size:1rem;
@@ -658,6 +658,9 @@ p[link] {
 
 
 
+hhhhhhhhhhhhhermon
+
+
 
 /* accordion */
 .all {
@@ -677,6 +680,16 @@ p[link] {
       padding: 0px;
       box-sizing: border-box;
     }
+
+/* acordion container */
+.container-fluid [accordion] {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(46, 3, 3);
+    /* box-shadow: 0rem 2rem 2rem 7rem royalblue; */
+    width: 100%;
+}
+
 .date {
       background-color: rgb(70, 69, 69);
       color: white;
@@ -706,7 +719,7 @@ p[link] {
     .active:after {
       content: "\1F446";
     }
-
+/* inside bg of notes */
     .notes {
       background-color: rgb(116, 115, 115);
       color: white;
@@ -719,91 +732,7 @@ p[link] {
       transition: max-height 0.2s ease-out;
     }
 /* i decoration  in accordion*/
-    .acor-i {
-      color: #111;
-    }
-    
-.social-icon{
-  margin:1.2rem;
-  color:rgba(255, 217, 0, 0.801);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* accordion */
-.all {
-  background-image: url(./image/BEACH.jpg);
-  background-size: cover;
-  height: 700px;
-  padding: 0px 0px 0px 20px;
-  
-  
-  /* position: fixed; */
-  /* position: fixed; */
-  /* margin-left: 600rem; */
-  
-}
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-    }
-.date {
-      background-color: rgb(70, 69, 69);
-      color: white;
-      font-size: larger;
-      cursor: pointer;
-      width: 100%;
-      padding: 10px;
-      border-radius: 7px;
-      outline: none;
-      font-size: 15px;
-      margin: auto;
-      margin-top: 20px;
-      transition: 0.4s;
-      display: inline-block;
-      overflow: hidden;
-    }
-
-    .date:hover {
-      transform: scale(1.1);
-    }
-
-    .date:after {
-      content: "\1F447";
-      margin-left: 80%;
-    }
-
-    .active:after {
-      content: "\1F446";
-    }
-
-    .notes {
-      background-color: rgb(116, 115, 115);
-      color: white;
-      font-size: large;
-      padding: 0px 18px;
-      margin-top: 10px;
-      max-height: 0px;
-      transition: 0.4s;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-    }
-/* i decoration  in accordion*/
-    .acor-i {
+    .acor-i { 
       color: #111;
     }
     
@@ -1762,7 +1691,7 @@ hhermMON
 
 <!-- <hr> -->
 <!-- accordion section -->
-<div>
+<div class="container-fluid" accordion="true">
   <div class="all" height="150rem">
       <header>
         <button class="date">Utilisateur 1 <br />expérience</button>
@@ -1846,6 +1775,22 @@ hhermMON
   </div>
 
 </div>
+
+
+
+<div>
+  <button class="note date">ama</button>
+  <button class="note date">ama</button>
+  <button class="note date">ama</button>
+  <button class="note date">ama</button>
+  <button class="note date">ama</button>
+</div>
+
+
+
+
+
+
 <!-- end of accordion -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
