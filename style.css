@@ -304,7 +304,7 @@ button {
 
 .but-Children{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.868);}
 .but-home{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);}
-.but-theLand{width: 80px; padding: 10px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;}
+.but-theLand{width: 110px; padding: 10px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;}
 .but-activities{width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.868);}
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (min-width: 600px) {/* top container  and  navigation butts*/
