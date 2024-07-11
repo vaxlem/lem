@@ -150,8 +150,16 @@
             </div>
 
             <div class="button">
-                <a href="./children/alorgbodzi.html"><button>More information</button></a>
+                <!-- <a href=""><button onclick="speak('GOAT')">More information</button></a> -->
+                <!-- <button class="butto" onclick="speak('Gbor')">                
+                    <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
+                    Speak</button> -->
+                             
+                <i class="fa fa-volume-up fa-1x butto" onclick="speak('Gbor GOAT')" aria-hidden="true"></i>
             </div>
+            <!-- <button class="butto" onclick="speak('Gbor')">                
+                <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
+                </button> -->
         </div>
         </div>
 <!-- 2 -->
@@ -229,6 +237,51 @@
     </div>   
    
     </div>
+
+
+    <!-- scripts section -->
+     <!-- text to speech contol -->
+<script>
+    // Check if browser supports the Web Speech API
+    if ('speechSynthesis' in window) {
+    const synth = window.speechSynthesis;
+    const textInput = document.querySelector('#text');
+    const speakButton = document.querySelector('#speakButton');
+    const pauseButton = document.querySelector('#pauseButton');
+    const resumeButton = document.querySelector('#resumeButton');
+    const stopButton = document.querySelector('#stopButton');
+    let utterance = new SpeechSynthesisUtterance();
+    
+    // Event handlers
+    speakButton.addEventListener('click', () => {
+     if (textInput.value !== '') {
+       utterance.text = textInput.value;
+       synth.speak(utterance);
+     }
+    });
+    
+    pauseButton.addEventListener('click', () => {
+     synth.pause();
+    });
+    
+    resumeButton.addEventListener('click', () => {
+     synth.resume();
+    });
+    
+    stopButton.addEventListener('click', () => {
+     synth.cancel();
+    });
+    } else {
+    // Web Speech API is not supported
+    console.log('Web Speech API is not supported by this browser.');
+    }
+</script>
+<script>
+    function speak(word) {
+     const utterance = new SpeechSynthesisUtterance(word);
+     speechSynthesis.speak(utterance);
+    }
+    </script> 
 </body>
 </html>
 
