@@ -23,6 +23,10 @@
 
     
 <style>
+  button h1{
+    color: rgba(0, 255, 251, 0.762);
+
+  }
     body {
         font-family: "Lato", sans-serif;
         background-color: #6caaff;
@@ -319,9 +323,11 @@ a{
           font-size: 3rem;
   /* clear */
           font-size: 1rem;
+          text-transform: uppercase;
 
           padding-bottom: 4rem;
           color: #f0f0f041;
+          color: rgba(0, 255, 251, 0.986);
         }
         .smallLetter{font-size: small;}    
 
@@ -501,11 +507,24 @@ end
         border: 2px;
       }
       .butto{
-        background-color: rgba(6, 77, 85, 0.954);
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background-color: rgba(6, 77, 85, 0.954); */
         /* background-color: rebeccapurple; */
         /* color: red; */
+        /* background-color: rgba(180, 244, 31, 0.224); */
+        background-color: rgba(6, 77, 85, 0.39);
+
+
         border-style: none;
         margin-right: 0.5rem;
+      }
+      .butto h2{
+        background-color: rgba(180, 244, 31, 0.224); 
+        width: 20px; 
+        height: 20px; 
+        text-align: center; 
+        margin: auto;
       }
       .fa-university{
         font-size: 16px; 
@@ -941,79 +960,87 @@ anothere table 4 French -->
       </tr>
       <tr>
         <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-      <button class="butto" onclick="speak('gbor')">
-        <h1 id="ami l' huile">Gbɔ̃</h1> 
+          <br>
+      <button class="butto" onclick="speak('gbor')">    
+        <h1 id="Gbɔ̃ gbor goat">Gbɔ̃</h1> 
         
-        
-          
-<!-- audio settings -->
-        <!-- <audio id="myAudio"  controls>
-          <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
-          Your browser does not support the audio element.
-          <i class="fa fa-Parlerer" aria-hidden="true"></i>
-        </audio> -->
-        <!-- <button class="butto" onclick="speak('Gbor')">
-          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="#">Gbɔ̃</h1> 
-          <h1>Gbɔ̃</h1>
-       <br></button> -->
-       <br>
-<!-- audio settings -->
           <audio id="myAudio"  controls>
             <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
             Your browser does not support the audio element.
             <i class="fa fa-speaker" aria-hidden="true"></i>
-          </audio> </button>
+          </audio> 
+      </button>
 <!-- controls -->
   
         </td>               
-        <td class="table-data-width"><img class="tdata-img" src="./image/goat.PNG"  alt="bongo"></td>
-          <!-- <td class="va"> <h1>GOAT  -->
-              <br>
-              <td class="table-data-width"><h1 id="gbor bouc chèvre"><br>
+      <td class="table-data-width">
+          <img class="tdata-img" src="./image/goat.PNG"  alt="Bouc"></td>
+      <td class="table-data-width">
+                     <br>
+          <button class="butto" onclick="speak('chèvre(feminine), bouc(masculine)')">   
+          <h1 id="gbor bouc chèvre"><br>
                 <span class="fren-fontsize" >Chèvre<span class="smallLetter">(feminine)</span></span><br>
                 <span class="fren-fontsize" >Bouc<span class="smallLetter">(masculine)</span></span>
-              </h1>
-              <button class="button" onclick="speak('chèvre(feminine), bouc(masculine)')">
-                <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
-              </button>
-            </td>
+          </h1>
+          <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+          </button> 
+
+      </td>
       </tr>
       
 
 
     <tr>
-      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="ami l' huile">Ami</h1> 
-        <button class="butto" onclick="speak('Ami')">Parler</button>
+      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+       
+<button class="butto" onclick="speak('ami')">      
+  <h1 id="ami l' huile">Ami</h1> 
+
+ <!-- <br> -->
 <!-- audio settings -->
-        <audio id="myAudio"  controls>
-          <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
-          Your browser does not support the audio element.
-          <i class="fa fa-Parlerer" aria-hidden="true"></i>
-        </audio>
+    <audio id="myAudio"  controls>
+      <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+      <i class="fa fa-speaker" aria-hidden="true"></i>
+    </audio> 
+</button>
 <!-- controls -->
 
       </td>
       <td class="table-data-width"><img class="tdata-img" src="./image/oil (1).jpg"  alt="bongo"></td>
       <td class="table-data-width">
+        <button class="butto" onclick="speak('l huile')" >
+        <div>
         <h1>
           <span class="fren-fontsize">l' huile</span>
         </h1>
-        <button class="button" onclick="speak('l huile')">
-          <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
-        </button>
+       
+        <!-- <br> -->
+        
+        <!-- <button class="button" onclick="speak('l huile')"> -->
+          <h2>
+            <i class="fa fa-volume-up" aria-hidden="true" ></i></h2>
+        <!-- </button> -->
+        </div>
+      </button> 
       </td>
       
   </tr>
     <tr>
-        <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="anti orange">Aŋuti</h1> 
-          <button class="butto" onclick="speak('Anti')">Parler</button>
+        <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="anti orange"></h1> 
+<button class="butto" onclick="speak('Anti')">      
+  <h1 id="anti orange">Aŋuti</h1> 
+
+ <!-- <br> -->
 <!-- audio settings -->
-          <audio id="myAudio"  controls>
-            <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
-            Your browser does not support the audio element.
-            <i class="fa fa-speaker" aria-hidden="true"></i>
-          </audio>
+      <audio id="myAudio"  controls>
+      <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+      <i class="fa fa-speaker" aria-hidden="true"></i>
+      </audio> 
 <!-- controls -->
+
+</button>
   
         </td>
         <td class="table-data-width"><img class="tdata-img" src="./image/ORANGE.jpg"  alt="bongo"></td>
@@ -1028,16 +1055,21 @@ anothere table 4 French -->
         
     </tr>
     <tr>
-      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="nku l' œil">ŋku</h1> 
-        <button class="butto" onclick="speak('nku')">Parler</button>
+      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        
+<button class="butto" onclick="speak('nku')">      
+  <h1 id="nku l' œil">ŋku</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
-        <audio id="myAudio"  controls>
-          <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
-          Your browser does not support the audio element.
-          <i class="fa fa-speaker" aria-hidden="true"></i>
-        </audio>
+<audio id="myAudio"  controls>
+<source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+<i class="fa fa-speaker" aria-hidden="true"></i>
+</audio> 
 <!-- controls -->
 
+</button>
       </td>
         <td class="table-data-width"><img class="tdata-img" src="./image/EYE.jpg"  alt="bongo"></td>
       <!-- <td class="va"> <h1>GOAT  -->
@@ -1051,15 +1083,21 @@ anothere table 4 French -->
         </td>
   </tr>
   <tr>
-      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1>Ayiɖa</h1> 
-        <button class="butto" onclick="speak('Ayida')">Parler</button>
+      <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        
+ <button class="butto" onclick="speak('Ayida')">      
+  <h1 id="ayida le peigne">Ayiɖa</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
-        <audio id="myAudio"  controls>
-          <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
-          Your browser does not support the audio element.
-          <i class="fa fa-speaker" aria-hidden="true"></i>
-        </audio>
+<audio id="myAudio"  controls>
+<source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+<i class="fa fa-speaker" aria-hidden="true"></i>
+</audio> 
 <!-- controls -->
+
+</button>
 
       </td>
       <td class="table-data-width"><img class="tdata-img" src="./image/comb1.jpg"  alt="bongo"></td>
@@ -1075,15 +1113,21 @@ anothere table 4 French -->
   </tr>
 <!-- the rest of the content table --> 
 <tr>
-<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="Aforkpodzi le' talon">Afɔkpodzi</h1> 
-<button class="butto" onclick="speak ('Aforkpodzi')">Parler</button>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+
+ <button class="butto" onclick="speak('Aforkpodzi')">      
+  <h1 id="Aforkpodzi le' talon">Afɔkpodzi</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
 <audio id="myAudio"  controls>
 <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
 Your browser does not support the audio element.
 <i class="fa fa-speaker" aria-hidden="true"></i>
-</audio>
+</audio> 
 <!-- controls -->
+
+</button>
 
 </td>
 <td class="table-data-width"><img class="tdata-img" src="./image/HEEL.jpg"  alt="bongo"></td>
@@ -1097,15 +1141,21 @@ Your browser does not support the audio element.
 </td>
 
 </tr><tr>
-<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="Aɖiba papaye">Aɖiba</h1> 
-<button class="butto" onclick="speak('Ariba')">Parler</button>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+
+<button class="butto" onclick="speak('Ariba')">      
+  <h1 id="Aɖiba papaye">Aɖiba</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
 <audio id="myAudio"  controls>
 <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
 Your browser does not support the audio element.
 <i class="fa fa-speaker" aria-hidden="true"></i>
-</audio>
+</audio> 
 <!-- controls -->
+
+</button>
 
 </td>
 <td class="table-data-width"><img class="tdata-img" src="./image/PAWPAW.jpg"  alt="bongo"></td>
@@ -1119,16 +1169,21 @@ Your browser does not support the audio element.
 </td>
 
 </tr><tr>
-<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="apel pomme">Apel</h1> 
-<button class="butto" onclick="speak('Apel')">Parler</button>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="apel pomme"></h1> 
+
+<button class="butto" onclick="speak('Apel')">      
+  <h1 id="Apel Apple">Apel</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
 <audio id="myAudio"  controls>
 <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
 Your browser does not support the audio element.
 <i class="fa fa-speaker" aria-hidden="true"></i>
-</audio>
+</audio> 
 <!-- controls -->
 
+</button>
 </td>
 <td class="table-data-width"><img class="tdata-img" src="./image/APPLE.jpg"  alt="bongo"></td>
 <td class="table-data-width">
@@ -1142,16 +1197,21 @@ Your browser does not support the audio element.
 
 </tr>
 <tr>
-<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="sabala oignon">Sabala</h1> 
-<button class="butto" onclick="speak('Sabala')">Parler</button>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+
+<button class="butto" onclick="speak('Sabala')">      
+  <h1 id="sabala oignon">Sabala</h1> 
+
+<!-- <br> -->
 <!-- audio settings -->
 <audio id="myAudio"  controls>
 <source src="../audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
 Your browser does not support the audio element.
 <i class="fa fa-speaker" aria-hidden="true"></i>
-</audio>
+</audio> 
 <!-- controls -->
 
+</button>
 </td>
 <td class="table-data-width"><img class="tdata-img" src="./image/onion.jpg"  alt="bongo"></td>
 <td class="table-data-width">
