@@ -66,7 +66,8 @@ audio::-webkit-media-controls-play-button,
 
 /* color of names */
 .fren-fontsize{color: black; text-align: center;}
-
+/* black color for the ewe names */
+.blackcolor{color: black;}
         /* size of fa icon */
       .fa-volume-up{
         font-size: 25px; color:black;
@@ -152,6 +153,7 @@ hr[id] {
         border-width: 10.5rem;
         /* border-color: #111111d7; */
         border-radius: 10px;
+        
         /* background-color: rgba(6, 77, 85, 0.954); */
         box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
       }
@@ -177,7 +179,8 @@ hr[id] {
   box-shadow: 2px 4px 2px rgb(86, 4, 239);
 }
 
-.table-data-width{ width: 10.8rem; text-align: center;colo: #f4e2f6; } /* the width that expands to fit rightly for the div containers */
+.table-data-width{         
+  width: 10.8rem; text-align: center;colo: #f4e2f6; } /* the width that expands to fit rightly for the div containers */
 HPOSITION
 table-header
 reduction
@@ -352,8 +355,9 @@ img[bongoimage]{
    
 /* HEADER POSITION IN HEADER */
     .HPOSITION{
-      margin-left:0.3rem; /* as in table data header */
-      margin-left:0.5;
+      margin-left:0.3rem;
+       /* as in table data header */
+      /* margin-left:0.5rem; */
       /* margin-left:14.9rem; */
       margin-top:0rem;
       /* height: 2rem; */
@@ -363,7 +367,10 @@ img[bongoimage]{
     /* replace for combination */
     
       .HPOSITION .table-header{
-            height: 2rem;    
+            height: 2rem;
+            /* now added today for the headder alignment   */
+            width: 200px;  
+            margin-left: 0.5rem;
       }
 
 
@@ -1073,16 +1080,16 @@ width: 100%;
           <tr>
             <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
               <!-- <h1>Gbɔ̃</h1>  -->
-              <button class="butto" onclick="speak('Gbor')">                
+              <button class="butto " onclick="speak('Gbor')">                
                 <!-- <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i> -->
                 
 <!-- audio settings -->
- <h1>Gbɔ̃</h1>
+ <h1 id="Gbɔ̃ Goat" class="blackcolor">Gbɔ̃</h1>
  <!-- <p> speak</p>                 -->
  <!-- <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i> -->
  <!-- <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
  Speak -->
-              </button>
+              </button> 
               <audio id="myAudio" style="width: 133px; height: 15px;" controls>
                 <source src=".//01 YELLOW SISI.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -1097,11 +1104,12 @@ width: 100%;
               <!-- <td class="va"> <h1>GOAT  -->
                   <br>
                   <td class="table-data-width">
+                 <button class="butto" onclick="speak('GOAT')">
                   <h1 id="gbor goat"><font color="black">Goat</font> <br>
                    
                   </h1>
-                  <button class="button" onclick="speak('GOAT')">
-                  <i class="fa fa-volume-up" aria-hidden="true"></i>
+                  <h2>
+                  <i class="fa fa-volume-up " aria-hidden="true"></i></h2>
                     <!-- <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2> -->
                   </button>
                 </td>
@@ -1110,7 +1118,8 @@ width: 100%;
 
 
         <tr>
-          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="ami oil">Ami</h1> 
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <h1 id="ami oil" class="blackcolor">Ami</h1> 
             <button class="butto" onclick="speak('Ami')">
               <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
               Speak</button>
@@ -1146,7 +1155,7 @@ width: 100%;
             <button class="butto" onclick="speak('oil')" >
   
               <div>
-              <h1 id="Ami oil">
+              <h1 id="Ami oil"  class="blackcolor">
                 <span class="fren-fontsize">Oil</span>
               </h1>
              
@@ -1160,7 +1169,7 @@ width: 100%;
           
       </tr>
         <tr>
-            <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1>Aŋuti</h1> 
+            <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 class="blackcolor">Aŋuti</h1> 
               <button class="butto" onclick="speak('Anti')">
                                 <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
 Speak</button>
@@ -1178,7 +1187,7 @@ Speak</button>
             <td class="table-data-width">
               <button class="butto" onclick="speak('orange')">
              
-              <h1 id="anuti orange">
+              <h1 id="anuti orange" class="blackcolor">
                 <span class="fren-fontsize">Orange</span>
               </h1>
               <!-- <button class="button" onclick="speak('orange')"> -->
@@ -1190,7 +1199,7 @@ Speak</button>
             
         </tr>
         <tr>
-          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="nku eye">ŋku</h1> 
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="nku eye" class="blackcolor">ŋku</h1> 
             <button class="butto" onclick="speak('nku')">
                               <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
 Speak</button>
@@ -1232,7 +1241,7 @@ Speak</button>
               <button class="butto" onclick="speak('eye')" >
     
                 <div>
-                <h1 id="ŋku Eye">
+                <h1 id="ŋku Eye" class="blackcolor">
                   <span class="fren-fontsize">Eye</span>
                 </h1>
                
@@ -1245,7 +1254,7 @@ Speak</button>
             </td>
       </tr>
       <tr>
-          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="ayiɖa comb">Ayiɖa</h1> 
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 id="ayiɖa comb" class="blackcolor">Ayiɖa</h1> 
             <button class="butto" onclick="speak('Ayiɖa')">
                               <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
 Speak</button>
@@ -1279,7 +1288,7 @@ Speak</button>
       </tr>
 <!-- the rest of the content table --> 
 <tr>
-<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1>Afɔkpodzi</h1> 
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><h1 class="blackcolor">Afɔkpodzi</h1> 
   <button class="butto" onclick="speak('Aforkpodzi')">
                     <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i>
 Speak</button>
@@ -1432,7 +1441,8 @@ Speak</button>
 <!-- SIDE OF SIDENAV BEGINS content  -->
 
 <!-- menu -->
- 
+ <aside>
+  
 <div id="mySidenav" class="sidenav">
     <div>
         <!-- controls -->
@@ -1507,8 +1517,9 @@ Speak</button>
     
     
     </div>
-    </div>
- 
+</div>
+
+ </aside>
 <!-- END OF SIDENAV BEGINS CONTENT WND -->
 
 <!-- HHerMON  -->
