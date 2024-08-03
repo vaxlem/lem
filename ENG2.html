@@ -35,13 +35,13 @@
   .clear{
     clear:both;
   }  
-  /* for all header section position */
+  /* 2 for all header section position */
   .header{
     /* margin-left: 0.5rem; */
     margin-left: 0.01rem;
   }
   .col{
-    /* welcome text */
+    /* 1welcome text */
     display: noe; 
     font-size:1rem;
     text-align: center; 
@@ -59,7 +59,7 @@
     background-color: none;
   }
 
-  /* table data width */
+  /* 3 table data width */
   .table-data-width .butto  .fa-1x {
   font-size: 16px;
   color: black;
@@ -78,7 +78,7 @@ hr[id] {
   margin: 0rem;
 }
 
-/* table- colum section*/
+/* 4 table- colum section*/
 .table-column{
       width: fit-content;
       border-width: 10.5rem;
@@ -91,39 +91,66 @@ hr[id] {
       /* background-color: rgba(6, 77, 85, 0.954); */
       box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
     }
-/* background to the column header titles */
+/* this very padding to come and check */
+    .table-column{
+      
+      /* checking 4 fitness */
+      /* padding-left: 0.21rem; */
+      border-color: #111111d7;
+    }
+/* 5 background to the column header titles */
 .table-column[bgc]{background-color: rgba(6, 77, 85, 0.954);
 }
  
-/* HEADER POSITION IN HEADER */
+/*6 HEADER POSITION IN HEADER */
 .HPOSITION{
     margin-left:0.3rem;
-     /* as in table data header */
+/* as in table data header */
     /* margin-left:0.5rem; */
     /* margin-left:14.9rem; */
     margin-top:0rem;
     height: 2rem;
-    /* 5 selected insted of 2 for the image eng and ewe col*/
+/* 5 selected insted of 2 for the image eng and ewe col*/
     height: 5rem;
     color: rgba(0, 255, 251, 0.762);
   
   }
-  /* replace for combination */
+  /*7 replace for combination */
   
     .HPOSITION .table-header{
           /* height: 2rem; */
           /* now added today for the headder alignment   */
-          /* this width 200 maked the header table expands or srink into fit mobile view */
+     /* this width 200 maked the header table expands or srink into fit mobile view */
           /* width: 200px;   */
           margin-left: 0.5rem;
     }
+
+/*8 where the header width control is covering title names*/
+.table-header{
+margin-top: 0rem;
+/* height: 2rem; */
+/* width:21.8rem; */
+width:10.8rem;
+/* width:16rem; */
+
+
+text-align: center;
+position: relative;
+/* left: 2.2rem; */
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:30px;
+border-top-left-radius:10px;
+box-shadow: 2px 4px 2px rgb(86, 4, 239);
+}
 /* end of header */
   </style>  
 </head>
 <body>
+<!-- header column -->
 <div>  
     
-    <div style="display: none;"> 
+  <div style="display: none;"> 
         
       body {
           font-family: "Lato", sans-serif;
@@ -974,12 +1001,14 @@ hr[id] {
   
   </div>
   
-<!-- header column -->
+<header>
+  <!-- 2 -->
 <div class="side off nav header" style="">
     
     <div><!-- ends at sidenav  true?-->
       <div class="header" style="display: non; ">
         <!-- hamburger --> 
+<!-- 1 -->
   <div  class="col"><!-- fisrt -->
     <!-- <p fix="true"> The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:  WELCOME TO VAXLEM </p> -->
     <h1 style="">
@@ -1039,14 +1068,17 @@ hr[id] {
         </div>
       </div> -->
       </div>
-<!-- header details -->
+<!--3/4/5 header details -->
 <div class=" table-column" bgc="true">
 <table class="HPOSITION">
+  <!-- 6 hpostion -->
 <tbody>
   <tr>
-      <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Language</h1></td>
-      <td class="table-data-width HPOSITION"><h1 class="table-header reduction">Image</h1></td>
-      <td class="table-data-width HPOSITION"><h1 class="table-header reduction">English</h1>
+<!-- 3/7 -->
+      <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Language</h1></td> 
+<!-- 8 title names -->
+      <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Image</h1></td>
+      <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">English</h1>
   </tr></tbody></table></div> 
  </div>
      
@@ -1104,11 +1136,22 @@ hr[id] {
 </div><!-- sidenav ends here -->
 
 </div>
+</header>
+
+</div>
+
 <!-- end of new header -->
 
-    </div>
+<!-- main section -->
+<main>
 
-  
+</main>
+<!-- end of main section -->
+
+<!-- nav aside section -->
+<aside></aside>
+<!-- end of aside -->
+
 <!-- this is the full degimage column. -->
 <!-- <div style="width: fit-content; padding: 8% 2% 0%; margin: 2px; text-align: justify;display:non ;"> -->
   <div style="width: fit-content; padding: 8% 0% 0%; margin:50px 5px 2px 11px; text-align: justify;display:non ;">
