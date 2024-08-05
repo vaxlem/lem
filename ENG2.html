@@ -19,7 +19,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="stylesheet" href="./style.css"> -->
 <!-- <link rel="stylesheet" href="./mobilefirstHEADER.css"> -->
-
+<!-- <link rel="stylesheet" href="./mediaqueryFRENCHOPTION.css"> -->
 
 <!-- design for mobile first and use min for large screens -->
   <style>
@@ -84,14 +84,7 @@
     font-family:system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif';
   }
 
- /* .col{
-  display: noe; 
-  background-color: #f4e2f6; 
-  color:rgba(0, 0, 128, 0.41);
-  margin:0 auto;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
-    'Helvetica Neue', sans-serif;
-  } */
+
 /* close and a-link tag button font style */
   a{
     color: rgba(255, 255, 0, 0.958);
@@ -131,6 +124,14 @@ hr[id] {
       /* border-color: #111111d7; */      
       /* background-color: rgba(6, 77, 85, 0.954); */
       box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
+    
+      /* this very padding to come and check */ 
+    
+      
+      /* checking 4 fitness */
+      /* padding-left: 0.21rem; */
+      border-color: #111111d7;
+      
     }
 /* this very padding to come and check */
     .table-column{
@@ -156,10 +157,12 @@ hr[id] {
     color: rgba(0, 255, 251, 0.762);
   
   }
-  /*7 replace for combination */
+
+    /*7 replace for combination */
   
     .HPOSITION .table-header{
-          /* height: 2rem; */
+         /* to bring back  */
+      /* height: 2rem; */
           /* now added today for the headder alignment   */
      /* this width 200 maked the header table expands or srink into fit mobile view */
           /* width: 200px;   */
@@ -186,7 +189,10 @@ border-top-left-radius:10px;
 box-shadow: 2px 4px 2px rgb(86, 4, 239);
 }
 
-/* 9 for the header */
+/* 9 for the header ewe img eng
+this is messing up the tin. to tally later
+
+*/
 .reduction{
     font-size:2rem;
 /* clear */
@@ -208,6 +214,22 @@ box-shadow: 2px 4px 2px rgb(86, 4, 239);
     margin: 3rem;
 
   }
+
+/* 10 grid col */
+  .container {
+        display: flex;
+      }
+  .column{
+        flex: 1; /* Equal width for both columns */
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin-right: 10px; /* Gap between columns */
+        width: 34.135rem;;
+      }
+
+      .column:last-child {
+      margin-right: 0; /* Remove margin from the last column */
+    }
 
 /* end of header */
 /* } */
@@ -1158,7 +1180,7 @@ box-shadow: 2px 4px 2px rgb(86, 4, 239);
 
 
 
-    <div class="content" style="display: none; width: fit-content;
+<div class="content" style="display: none; width: fit-content;
     padding: 8% 0% 0%;
     margin: 0px;
     text-align: justify;
