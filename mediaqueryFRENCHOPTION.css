@@ -132,7 +132,7 @@ color: rgba(0, 255, 251, 0.762);
   /* height: 2rem; */
       /* now added today for the headder alignment   */
  /* this width 200 maked the header table expands or srink into fit mobile view */
-      /* width: 200px;   */
+      /* width: 200px;  ewe image engl */
       margin-left: 0.5rem;
 }
 
@@ -156,13 +156,14 @@ border-top-left-radius:10px;
 box-shadow: 2px 4px 2px rgb(86, 4, 239);
 }
 
-/* 9 for the header */
+/* 9 for the header words ew im en*/
 .reduction{
 font-size:2rem;
 /* clear */
 font-weight: bolder;
-font-size:1rem;
+/* font-size:1rem; */
 color: rgba(179, 246, 245, 0.986);
+/* color: red; */
 padding-bottom: 2.5rem;
 }
 
