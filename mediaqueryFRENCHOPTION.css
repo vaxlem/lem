@@ -23,7 +23,9 @@ clear:both;
     text-align:center;           
     position: fixed;
     top: 0;
-    left: 0;
+    /* i gotu now. this ie where to adjust the header margin to lieft or right */ 
+    /* see @12's margin */
+    left: 0rem;
     z-index: 1;
     /* width: 100%;
     width: 44.5rem;    */
@@ -161,24 +163,54 @@ box-shadow: 2px 4px 2px rgb(86, 4, 239);
 font-size:2rem;
 /* clear */
 font-weight: bolder;
-/* font-size:1rem; */
+font-size:1rem;
 color: rgba(179, 246, 245, 0.986);
 /* color: red; */
 padding-bottom: 2.5rem;
 }
 
-/* 9 burger bar  */
+/* 10 burger bar  */
 /* .p{ margin:0rem 3rem 0rem 10rem;
 padding-left: 1rem;     
 } */
 .p {
-margin: 0rem 3rem 0rem -3rem;
+  
+/* margin: 0rem 3rem 0rem -3rem; to bring back*/
 padding-left: 10rem;
+/* float: right; */
 }
 .pn{
 margin: 3rem;
 
 }
 
+/* 11 que-Answer */
+.que-Answer{
+  width: 100%; 
+  display: non; 
+/* this margin left to sent to header one or delete */
+  margin-left: 0.5rem;
+}
+
+/* 11 grid col */
+.container {
+  display: flex;
+}
+
+/* background-color: #fff;
+color: black; 
+width: 100%; 
+padding-right: ;" */
 /* end of header */
+
+/* 12 mainMenu margin to adjust to maybe 0.5/3rem*/   
+ /* 12 both table and que/answer deg imd table  */
+.margin-both-deg-Table{
+  width:fit-content; 
+  padding:8% 0% 0%; 
+  /* margin:50px 5px 2px 11px;  */
+  margin:50px 5px 2px 0px; 
+
+  text-align:justify;
+}
 /* } */

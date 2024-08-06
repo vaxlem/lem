@@ -14,7 +14,7 @@
   .clear{
     clear:both;
   }  
-  /* 2 for all header section position */
+  /* 2 for all header section position to be adjusted left or right*/
   .header{
     /* margin-left: 0.5rem; */
     margin-left: 0.01rem;
