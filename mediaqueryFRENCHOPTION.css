@@ -32,6 +32,7 @@ clear:both;
     /* width: 31.5rem; */
     /* width: 42.375rem;      */
     width: 34.135rem;
+    /* width: 35.135rem; */
     /* Adjust the width to take the remaining space */
     background-color: #0d0d0b5e;
     border: 1px solid red;
@@ -366,16 +367,26 @@ a{
     }
 /*width header column */
       .header{
-        text-align:center;           
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        width: 44.5rem;   
-        /* width: 31.5rem; */
-        /* width: 42.375rem;      */
-        width: 34.135rem;
+          /* margin-left: 0.01rem; */
+              text-align:center;           
+              position: fixed;
+              top: 0;
+              /* i gotu now. this ie where to adjust the header margin to lieft or right */ 
+              /* see @12's margin */
+              left: 0rem;
+              z-index: 1;
+              /* width: 100%;
+              width: 44.5rem;    */
+              /* width: 31.5rem; */
+              /* width: 42.375rem;      */
+              /* width: 34.135rem; rejected*/
+              width:35.5rem;
+              
+
+
+
+
+
         /* Adjust the width to take the remaining space */
         background-color: #0d0d0b5e;
         border: 1px solid red;
