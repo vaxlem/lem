@@ -1,0 +1,72 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 lang="fr">Bonjour, comment ça va?</h1>
+    <h1 lang="ee">Te ku te golovia?</h1>
+
+    <button onclick="speak('fr')">Read French</button>
+    <button onclick="speak('ee')">Read Estonian</button>
+
+    <script>
+        function speak(language) {
+            let text = '';
+            if (language === 'fr') {
+                text = document.querySelector('h1[lang="fr"]').textContent;
+            } else if (language === 'ee') {
+                text = document.querySelector('h1[lang="ee"]').textContent;
+            }
+
+            const msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            msg.lang = language;
+
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+
+</body>
+</html>
