@@ -389,7 +389,6 @@ a{
 
         /* Adjust the width to take the remaining space */
         background-color: #0d0d0b5e;
-        background-color: blue;
         border: 1px solid red;
         border-bottom-right-radius:10px;
         border-bottom-left-radius:10px;
@@ -489,9 +488,6 @@ a{
       font-size: 10.5px;
     }
 /* menu bar icon */
-
-
-
 
 /* button, input, optgroup, select, textarea {
     margin: 0;
@@ -979,7 +975,6 @@ padding-top: 10px;
 }
 
 
-
 /* to trying call to action this thin */
 
 /* end of the above */
@@ -1071,6 +1066,8 @@ padding-top: 10px;
   /* margin-left:2px; */
 
 }
+
+
 
 
 /* MEDIAQUERRY */
