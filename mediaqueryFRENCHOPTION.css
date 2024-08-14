@@ -963,8 +963,8 @@ padding-top: 10px;
   text-align: center;
     margin-top: 1rem;
     margin: 1rem 5rem;
-    margin: 1rem 1rem;
-    margin: 1rem 0rem;
+    /* margin: 1rem 1rem;
+    margin: 1rem 0rem; */
     padding-bottom: 1rem;
         color: rgba(0, 255, 251, 0.762);
       color: rgba(248, 214, 23, 0.672);  
