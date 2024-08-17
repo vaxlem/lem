@@ -1,0 +1,70 @@
+  button h1{
+    color: rgba(0, 255, 251, 0.762);
+
+  }
+
+  /* audio coloring */
+ audio::-webkit-media-controls-play-button,
+ audio::-webkit-media-controls-panel {
+ background-color: #0d0d0b5e;
+ color: #0d0d0b5e;
+ 
+ }
+ audio{opacity: 0.5;}
+/* audio[controls]{background-color: #fff; color:#fff;} */
+   
+/* data audio txts settings */
+.controls {
+        display: inline-flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 0.4rem;
+      
+        
+      /* margin-top: 20px; */
+      }
+      
+      #myAudio{
+         width: 136px;
+         height: 15px;
+        }
+ /* clear */
+      .myAudio{
+         width: 133px;
+         height: 15px;
+      }
+
+      /* size of fa icon */
+      .fa-volume-up{
+        font-size: 25px; color:black;
+        width: 36px;
+        height: 36px;
+        padding-bottom: 21px;}
+
+/* Parler button */
+      .button {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(180, 244, 31, 0.224);
+        border: 2px;
+      }
+      .butto{
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background-color: rgba(6, 77, 85, 0.954); */
+        /* background-color: rebeccapurple; */
+        /* color: red; */
+        /* background-color: rgba(180, 244, 31, 0.224); */
+        background-color: rgba(6, 77, 85, 0.39);
+
+
+        border-style: none;
+        margin-right: 0.5rem;
+      }
+      .butto h2{
+        background-color: rgba(180, 244, 31, 0.224); 
+        width: 20px; 
+        height: 20px; 
+        text-align: center; 
+        margin: auto;
+      }

@@ -610,7 +610,7 @@ a{
         width: fit-content;
         border-width: 10.5rem;/* checking 4 fitness */
         padding-left: 0.21rem;
-        border-color: #111111d7;
+        border-color: hsla(0, 0%, 7%, 0.843);
         border-radius: 10px;
         background-color: rgba(6, 77, 85, 0.954);
         box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
