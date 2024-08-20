@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French and Ewe Language Speech Example</title>
+</head>
+<body>
+    <h1>French and Ewe Language Speech Example</h1>
+
+    <p id="eweText">Mí nyé amɛ si nyeɖe wò kple yehɔ̃ gbãtɔ kple nǔɔɖunɔ vɔ̃.</p>
+    <button onclick="speakText('ee')">Hear Ewe Text</button>
+
+    <p id="frenchText">Je suis une personne qui t'aime et te respecte.</p>
+    <button onclick="speakText('fr')">Hear French Text</button>
+
+    <script>
+        function speakText(language) {
+            let text;
+            if (language === 'ee') {
+                text = document.getElementById("eweText").textContent;
+            } else if (language === 'fr') {
+                text = document.getElementById("frenchText").textContent;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = language; // Set the language ('ee' for Ewe, 'fr' for French)
+
+            // Optional: Adjust the voice, pitch, and rate
+            utterance.pitch = 1;
+            utterance.rate = 1;
+
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

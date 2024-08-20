@@ -1140,11 +1140,11 @@ width: 100%;
           <tr>
             <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
               <!-- <h1>Gbɔ̃</h1>  -->
-              <button class="butto" onclick="speak('Gbor')">                
+              <button onclick="speakText('ee')" class="butto" id="eweText" lang="ee")">                
                 <!-- <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i> -->
                 
                 <!-- audio settings -->
-              <h1 id="Gbɔ̃ gbor goat" >Gbɔ̃</h1>
+              <h1 onclick="speakText('ee')" id="Gbɔ̃ gbor goat" id="eweText" lang="ee" >Gbɔ̃</h1>
               <audio id="myAudio" style="width: 133px; height: 15px;" controls>
                             <source src=".//01 YELLOW SISI.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
@@ -1174,7 +1174,7 @@ width: 100%;
         <tr>
           <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
             <button class="butto" onclick="speak('Ami')">
-              <h1 id="ami oil">Ami</h1>
+              <h1 id="ami oil" lang="ee">Ami</h1>
                     <!-- <br>        -->
 <!-- audio settings -->
             <audio id="myAudio" style="width: 133px; height: 15px;" controls>
@@ -1226,7 +1226,7 @@ width: 100%;
         <tr>
             <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
             <button class="butto" onclick="speak('Anti')">
-                <h1>Aŋuti</h1> 
+                <h1 id="Aŋuti Orange" lang="ee">Aŋuti</h1> 
 <!-- audio settings -->
                 <audio id="myAudio" style="width: 133px; height: 15px;" controls>
                   <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1257,7 +1257,7 @@ width: 100%;
         <tr>
           <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
             <button class="butto" onclick="speak('nku')">
-              <h1 id="nku eye">ŋku</h1>
+              <h1 id="nku eye" lang="ee">ŋku</h1>
 <!-- audio settings -->
             <audio  id="myAudio" style="width: 133px; height: 15px;" controls>
               <source src="/audio/WHEN I AM DOWN.m4a"  type="audio/mpeg">
@@ -1314,7 +1314,7 @@ width: 100%;
       <tr>
           <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
             <button class="butto" onclick="speak('Ayiɖa')">
-              <h1 id="ayiɖa comb">Ayiɖa</h1>
+              <h1 id="ayiɖa comb" lang="ee">Ayiɖa</h1>
 <!-- audio settings -->
             <audio id="myAudio"  controls style="width: 133px; height: 15px;">
               <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1349,7 +1349,7 @@ width: 100%;
 <tr>
 <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
   <button class="butto" onclick="speak('Aforkpodzi')">
-    <h1>Afɔkpodzi</h1> 
+    <h1 id="Afɔkpodzi heel" lang="ee">Afɔkpodzi</h1> 
 <!-- audio settings -->
   <audio  id="myAudio"  controls style="width: 133px; height: 15px;">
     <source  src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1380,7 +1380,7 @@ width: 100%;
 <tr>
 <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
   <button class="butto" onclick="speak('Ariba')">
-    <h1>Aɖiba</h1>     
+    <h1 id="Aɖiba Pawpaw" lang="ee">Aɖiba</h1>     
 <!-- audio settings -->
     <audio id="myAudio" style="width: 133px; height: 15px;" controls>
       <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1413,7 +1413,7 @@ width: 100%;
 <tr>
 <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
   <button class="butto" onclick="speak('Apel')">
-    <h1 id="apel apple">Apel</h1> 
+    <h1 id="apel apple" lang="ee">Apel</h1> 
 <!-- audio settings -->
   <audio id="myAudio" style="width: 133px; height: 15px;" controls>
     <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1449,7 +1449,7 @@ width: 100%;
 <tr>
 <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
   <button class="butto" onclick="speak('Sabala')">
-    <h1 id="sabala onion">Sabala</h1>    
+    <h1 id="sabala onion" lang="ee">Sabala</h1>    
 <!-- audio settings -->
   <audio id="myAudio" style="width: 133px; height: 15px;" controls>
     <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
@@ -1553,9 +1553,13 @@ width: 100%;
          
        <li><a href="./tableofcont.html/people and places.html">   <i class="fa fa-user-md" aria-hidden="true"></i> 
          <span class="tableContent-ion" >PEOPLE AND PLACES</span></a></li>
-       <li><a href="./tableofcont.html/workbook.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-         <span class="tableContent-ion" > WORK BOOK</span></a></li>
-       <li><a href="./tableofcont.html/sentences.html">    <i class="fa fa-language" aria-hidden="true"></i>
+       <li><a href="./tableofcont.html/COLOR.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" > color</span></a></li>
+       
+         <li><a href="./tableofcont.html/workbook.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <span class="tableContent-ion" > WORK BOOK</span></a></li>
+        
+         <li><a href="./tableofcont.html/sentences.html">    <i class="fa fa-language" aria-hidden="true"></i>
          <span class="tableContent-ion" >SIMPLE SENTENCE</span></a</li>
        </ol>
          <!-- <br>
@@ -2002,6 +2006,29 @@ document.addEventListener('DOMContentLoaded', function() {
      yearElement.textContent = currentYear;
  }
 });
+</script>
+
+
+ffgg
+
+<script>
+  function speakText(language) {
+      let text;
+      if (language === 'ee') {
+          text = document.getElementById("eweText").textContent;
+      } else if (language === 'fr') {
+          text = document.getElementById("frenchText").textContent;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language; // Set the language ('ee' for Ewe, 'fr' for French)
+
+      // Optional: Adjust the voice, pitch, and rate
+      utterance.pitch = 1;
+      utterance.rate = 1;
+
+      speechSynthesis.speak(utterance);
+  }
 </script>
 </div>
 </body>
