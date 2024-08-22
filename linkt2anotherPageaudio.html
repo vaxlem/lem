@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Audio Button</title>
+</head>
+<body>
+
+<a href="./landingPage.html"><button id="play-audio-button">Go to Next Page</button></a>
+
+<audio id="button-audio">
+    <source src="./01 YELLOW SISI.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const button = document.getElementById('play-audio-button');
+    const audio = document.getElementById('button-audio');
+
+    button.addEventListener('click', () => {
+        audio.play(); // Play the audio
+        window.location.href = "nextpage.html"; // Redirect to the next page
+    });
+</script>
+
+</body>
+</html>
