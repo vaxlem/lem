@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="aboutStyle.css">
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./image/BEACH.jpg'); /* Optional: Background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        #mute-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ccc;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[bGroundmusic]{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #ccc;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #landing-page{ position: absolute;
+            bottom: 15px;
+            /* left: 15px; */
+            /* background-color: #ccc; */
+            background-color: blueviolet;
+            color: yellow;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;}
+
+        #landing-page:hover{
+            background-color: #ff6666;
+            text-transform: uppercase;
+            color: #010101;
+        }
+        #mute-button.muted {
+            background-color: #ff6666;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <h1>Vaxlem is a multi-lingual learning material site</h1>
+    <h2>ABOUT THE AUTHOR</h2>
+    <p>Discover amazing content and connect with us. Enjoy your stay!</p>
+    <button id="mute-button">Mute</button>
+<!-- play bgMusic -->
+    <!-- <button bGroundmusic="true" onclick="audio"> <audio src="./01 YELLOW SISI.mp3"></audio> play background music </button> -->
+
+    <a href="./landingPage.html"><button id="landing-page">Continue</button></a>
+</div>
+
+<!-- <audio id="background-audio" autoplay loop>
+    <source src="./01 YELLOW SISI.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio> -->
+
+<audio id="background-audio" autoplay loop muted>
+    <source src="./01 YELLOW SISI.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    // JavaScript to control the audio playback
+    const audio = document.getElementById('background-audio');
+    const muteButton = document.getElementById('mute-button');
+
+    muteButton.addEventListener('click', () => {
+        if (audio.muted) {
+            audio.muted = false;
+            muteButton.textContent = 'Mute';
+            muteButton.classList.remove('muted');
+        } else {
+            audio.muted = true;
+            muteButton.textContent = 'Unmute';
+            muteButton.classList.add('muted');
+        }
+    });
+</script>
+
+</body>
+</html>
+hgghfgdhdgf
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontAwesome/all.css" />
+    <link rel="stylesheet" href="./fontAwesome/all.min.css" />
+    <link rel="stylesheet" href="./fontAwesome/fontawesome.css" />
+    <link rel="stylesheet" href="./fontAwesome/fontawesome.min.css" />
+    <title>LARELLA COUTURE</title>
+      <link rel="icon" href="./story/images/la rella.jpeg">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white !important;">
+        <a href="#" class="navbar-brand ml-3"
+          ><span style="color: rgba(0, 0, 0, 0.783)"; > La</span><span style="color: #d6a332;">RELLA</span> </a
+        ><img src="./images/la rella.jpeg" alt="" width="50rem">
+        <!-- <i class="fa fa-laptop" aria-hidden="true"></i> -->
+
+         
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="#navbarMenu"
+          aria-expanded="true"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- menu items to the center -->
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link"> <i class="fa fa-home" ></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./story/market place.html" class="nav-link"> <i class="fa fa-store" ></i> Market-Place</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"> <i class="fa fa-phone" ></i> Phones</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a href="" class="nav-link"> <i class="fa fa-question" ></i> FAQ</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn menu-right-btn border" type="submit">
+              signup
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- hamburger menu here -->
+    </header>
+
+    <main>
+      <div class="container-fluid p-0 ">
+        <div class="site-content">
+          <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column">
+              <h1 class="site-title"style="text-align:center !important;">Welcome to LaRella Couture</h1>
+              <p class="site-desc">
+                How does your everyday Shopping you do put you at the top? <br> That's what we
+                style you in. JUST,
+              </p>
+              <div class="d-flex flex-row " style=" justify-content: center; align-items:center !important;">
+                <a href="./story/index.html"><input
+                  type="button"
+                  value="contact us"
+                  class="btn site-btn1 px-4 py-3 mr-4 btn-dark"
+                /></a>
+                <!-- <input
+                  type="button"
+                  value="login"
+                  class="btn site-btn2 px-4 py-3 mr-4 btn-light"
+                /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-1">
+        <div class="container text-center">
+          <h1 class="heading-1">Awesome Garment reviews</h1>
+          <h1 class="heading-2" style="margin-bottom: 6%;">and sales</h1>
+          <p class="para-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+            ullam. Obcaecati, ut possimus. Officiis expedita ipsum reiciendis
+            non voluptatibus illo, corrupti vero sed numquam explicabo, neque
+            deserunt amet eveniet est.
+          </p>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/rence.jpg"
+                  alt="image here"
+                  class="card-img-top"
+                />
+                
+                <div class="card-body">
+                  <h4 class="card-title">Latest review</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum necessitatibus repudiandae eius qui hic! Quidem iste
+                    blanditiis nam quas distinctio.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <!-- <img
+                  src="./images/la rella.jpeg"
+                  alt="image here"
+                  class="card-img-top"
+                /> -->
+
+                <video width="auto" height= 478rem" controls>
+                  <source src="./images/VID-20200912-WA0011.mp4" type="video/mp4">
+                </video>
+                <div class="card-body">
+                  <h4 class="card-title">Latest review</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum necessitatibus repudiandae eius qui hic! Quidem iste
+                    blanditiis nam quas distinctio.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/la.jpg"
+                  alt="image here"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Latest review</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum necessitatibus repudiandae eius qui hic! Quidem iste
+                    blanditiis nam quas distinctio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-2">
+        <div class="container-fluid"><div class="d-flex justify-content-end here-there">
+          <div class="flex flex-column m-4">
+            <h1 class="heading-1 text-white">pick your style and a garment</h1>
+            <p class="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, fugit!
+            </p>
+            <a href="./story/market place.html"><input type="button" value="show" class="btn btn-danger"  ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+                <i class="fas fa-store fa-2x m-2" ></i>
+                <i class="    "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Shopping on the go </h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="d-flex flex-row">
+                <i class="fas fa-user-clock fa-3x m-2   "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">24/7 Availability</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+                <i class="fas fa-user-clock fa-3x m-2   "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">24/7 Availability</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="d-flex flex-row">
+                <i class="fas fa-shipping-fast  fa-2x m-2"></i>
+            
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Fast delivery</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+                <i class="fas fa-shipping-fast  fa-2x m-2"></i>
+            
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Fast delivery</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="d-flex flex-row">
+                <i class="fas fa-store fa-2x m-2" ></i>
+                <i class="    "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Shopping on the go </h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+                <i class="fas fa-user-cog  fa-3x m-2  "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Customer Service</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="d-flex flex-row">
+              <i class="fas fa-user-shield  fa-3x m-2"></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Authentication</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+                <i class="fas fa-user-shield  fa-3x m-2"></i>
+                  <div class="d-flex flex-column">
+                    <h3 class="m-2">Authentication</h3>
+                    <p class="m-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="d-flex flex-row">
+                <i class="fas fa-user-cog  fa-3x m-2  "></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Customer Service</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-row">
+               <i class="fa fa-lock fa-3x m-2" ></i>
+                <div class="d-flex flex-column">
+                  <h3 class="m-2">Secure</h3>
+                  <p class="m-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita obcaecati a quidem culpa assumenda, dolore possimus vitae voluptas aliquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="section-4 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <img src="./images/la re.jpg" alt="" width="590" class="sec-4-img">
+            </div>
+            <div class="col-sm-12 col-md-5 ">
+              <h1 class="text-white">When life gives you lemons,throw it away,go and buy wakye</h1>
+              <a href="">pay to be a pro member</a>
+
+              <p class="para-1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officiis beatae ratione. Corrupti quas voluptatum laudantium ipsa distinctio modi voluptatibus fugiat quis cumque consectetur veniam asperiores quasi, maiores animi est pariatur nobis quaerat atque iste assumenda? Voluptatum nulla aliquam autem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </main>
+
+  <footer>
+    <div class="section-5 text-center">
+
+      <h4 style="margin-top:5%;"> style you with love by <span style="font-style: italic; color: #d6a332;">LARELLACOUTURE</span> </h4>
+      <h5 class="my-4">I've got your back</h5>
+    </div>
+
+    <div class="form-inline justify-content-center">
+      <input type="text" name="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
+      <input type="button" value="contact us" class="btn btn-danger px-4 py2">
+   </div>
+ <div class="social">
+      <div class="d-flex flex-row justify-content-center">
+        <i class="fab fa-facebook-square fa-2x m-2" ></i>
+        <i class="fab fa-instagram fa-2x m-2  "></i>
+        <i class="fab fa-twitter  fa-2x m-2 "></i>
+        <i class="fab fa-linkedin  fa-2x m-2 "></i>
+        <i class="fab fa-github fa-2x m-2  "></i>
+      </div>
+    </div>
+
+    <hr>
+  <p style="text-align: center;"> la larella couture <i class="fas fa-copyright"></i> 2022</p>
+  </footer>
+
+    <script src="./bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>    <script src="./scrollreveal.js
+    "></script>
+    <!-- add scroll reveal -->
+    <script>
+      window.sr=ScrollReveal({duration:3000});
+      sr.reveal('.site-content .d-flex');
+      // repeat for other classes;
+      sr.reveal('.section-1 .d-flex');
+      sr.reveal('.section-2 .d-flex');
+      sr.reveal('.section-3 .d-flex');
+      sr.reveal('.container');
+      sr.reveal('.section-4 .row .col-md-7,.col-md-5');
+    </script>
+  </body>
+</html>

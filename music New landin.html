@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play on Page Load</title>
+</head>
+<body>
+
+<audio id="myAudio" preload="auto">
+    <source src="./01 YELLOW SISI.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<button id="playButton" onclick="playSound()">Click Me</button>
+
+<script>
+    // Play audio automatically on page load
+    window.onload = function() {
+        document.getElementById('myAudio').play();
+    };
+
+    // Function to play the sound when the button is clicked
+    function playSound() {
+        alert("Button clicked! Audio played previously.");
+    }
+</script>
+
+</body>
+</html>

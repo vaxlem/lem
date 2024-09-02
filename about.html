@@ -15,9 +15,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('./image/BEACH.jpg'); /* Optional: Background image */
+            background-image: url('./image/sit\ to\ read.jpg'); /* Optional: Background image */
             background-size: cover;
             background-position: center;
+            scroll-behavior: auto;
         }
         .content-container {
             background-color: rgba(255, 255, 255, 0.8);
@@ -41,6 +42,17 @@
             position: absolute;
             top: 15px;
             right: 15px;
+            background-color: #ccc;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[bGroundmusic]{
+            position: absolute;
+            top: 15px;
+            left: 15px;
             background-color: #ccc;
             border: none;
             padding: 10px 15px;
@@ -75,7 +87,12 @@
     <h1>Welcome to Our Website</h1>
     <p>Discover amazing content and connect with us. Enjoy your stay!</p>
     <button id="mute-button">Mute</button>
-    <a href="./landingPage.html"><button id="landing-page">Continue</button></a>
+<!-- play bgMusic -->
+    <!-- <button bGroundmusic="true" onclick="audio"> <audio src="./01 YELLOW SISI.mp3"></audio> play background music </button> -->
+
+    <!-- <a href="./about-Details.html"><button id="landing-page">Continue</button></a> -->
+    <a href=".//about/index.html"><button id="landing-page">Continue</button></a>
+
 </div>
 
 <!-- <audio id="background-audio" autoplay loop>
