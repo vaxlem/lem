@@ -73,7 +73,7 @@ font-size: xx-large;}
 }
 
 .here-there {
-  background-image: url(../image/TEACHER.jpg);
+  background-image: url(./image/TEACHER.jpg);
   background-attachment: fixed;
   /* background-size: 75%; */
   background-size: 100%;
