@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAXLẼM</title>
+    <link rel="stylesheet" href="./style (2).css">
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="" href="./CS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+     -->
+<!-- design for mobile first and use min for large screens -->
+    <style>
+        
+    body {
+        font-family: "Lato", sans-serif;
+        background-color: #6caaff;
+        margin: auto;
+        /* heeader color */
+        color: rgba(52, 55, 55, 0.762);
+        /* color:rgba(0, 255, 251, 0.762); */
+      }
+    .clear{
+      clear:both;
+    }  
+
+    /* close and a-link tag button font style */
+a{
+color: rgba(255, 255, 0, 0.958);
+text-decoration: none;
+/* font-family:cursive; */
+background-color: none;
+}
+
+  /* 2 for all header section position */
+
+/*width header column */
+.header{
+        /* margin-left: 0.01rem; */
+        text-align:center;           
+        position: fixed;
+        top: 0;
+        /* i gotu now. this ie where to adjust the header margin to lieft or right */ 
+        /* see @12's margin */
+        left: 0;
+        z-index: 1;
+        width: 44.5rem;   
+        /* width: 31.5rem; */
+        /* width: 42.375rem;      */
+        width: 34.135rem;
+        /* above width this reseved */
+        /* width: 32.35rem; */
+        /* width: 35.135rem; */
+        /* this 100 gives header full to corespond */
+        width: 100%;
+        /* Adjust the width to take the remaining space */
+        background-color: #0d0d0b5e;  
+/* alternating bgc for opaque/translucent */
+        background-color: rgba(6, 77, 85, 0.954);
+        border: 1px solid red;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        box-shadow: 2px 2px 2px red;
+ /* new adds        */
+    font-size: 16px; /* Increased text to enable scrolling */
+    padding:0%;  
+        text-align: center;
+        /* left: 15%; Adjust left position based on the width of the menu container */
+        /* background-color: #2196F3; this color blocks the transparency in the header section*/
+        margin: 0 auto 0 auto;
+        /* overflow-x: hidden; */
+        color: rgba(0, 255, 251, 0.762);
+         
+    }
+
+/* 1welcome text */
+/* .col{
+display: noe; 
+font-size:1rem;
+text-align: center; 
+background-color:  #f4e2f6; 
+color:#5021ff;
+color:rgba(0, 0, 128, 0.41); 
+margin:0 auto ;
+font-family:system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif';
+} */
+to bring back
+
+/* close and a-link tag button font style */
+    a{
+      color: rgba(255, 255, 0, 0.958);
+      text-decoration: none;
+      /* font-family:cursive; */
+      background-color: none;
+    }
+
+/* 3 table data width */
+.table-data-width .butto  .fa-1x {
+font-size: 16px;
+color: black;
+width: 36px;
+height: 19px;
+padding-bottom: 21px;
+}
+
+/* next div for tables hr 1st */
+/* hr[id]{height: 5px;background-color: #fff;}  */
+hr[id] {
+    height: 5px;
+    background-color: #fff;
+    width: 33.4rem;
+    width: 32rem;
+    /* width: fit-content; */
+    margin: 0rem;
+}
+
+/* 4 table- colum section*/
+.table-column{
+  width: fit-content;
+  border-width: 10.5rem;
+  border-color: #c6c0c0d7;
+  border-radius: 10px;
+  background-color:rgba(255, 0, 0, 0.487);
+  box-shadow: 2px 4px 2px 3px rgba(110, 239, 4, 0.661);
+
+  /* border-color: #111111d7; */      
+  /* background-color: rgba(6, 77, 85, 0.954); */
+  box-shadow: 2px 4px 2px 3px rgb(110, 239, 4);
+}
+/* this very padding to come and check */
+.table-column{
+  
+  /* checking 4 fitness */
+  /* padding-left: 0.21rem; */
+  border-color: #111111d7;
+}
+/* 5 background to the column header titles */
+.table-column[bgc]{background-color: rgba(6, 77, 85, 0.954);
+  
+  ;}
+
+/* 6 HEADER POSITION IN HEADER */
+.HPOSITION{
+      margin-left:0.3rem; /* as in table data header */
+      margin-left:0.5;
+      /* margin-left:14.9rem; */
+      margin-top:0rem;
+      /* height: 2rem; */
+      color: rgba(0, 255, 251, 0.762);
+    
+    }    
+/*8 where the header width control is covering title names */
+.table-header{
+  margin-top: 0rem;
+  /* height: 2rem; */
+  /* width:21.8rem; */
+              /* this width to consider */
+  /* width:10.8rem; */
+  /* width:16rem; */
+
+/* text-align: center; */
+  position: relative;
+  /* top:2rem; */
+  /* left: 2.2rem; */
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-top-right-radius:30px;
+  border-top-left-radius:10px;
+  box-shadow: 2px 4px 2px rgb(86, 4, 239);
+}
+
+/* 9 for the header words ew im en*/
+.reduction{
+font-size:2rem;
+/* clear */
+font-weight: bolder;
+font-size:1rem;
+color: rgba(179, 246, 245, 0.986);
+/* color: red; */
+padding-bottom: 2.5rem;
+}
+
+
+/* 10 burger bar  */
+/* .p{ margin:0rem 3rem 0rem 10rem;
+padding-left: 1rem;     
+} */
+.p {
+  
+  /* margin: 0rem 3rem 0rem -3rem; to bring back*/
+  padding-left: 10rem;
+  /* float: right; */
+  }
+  .pn{
+  margin: 3rem;
+  
+  }
+
+
+
+/* degimage section width */
+
+/* grid col */
+.container {
+        display: flex;
+      }
+
+
+      
+/* audio coloring */
+audio::-webkit-media-controls-play-button,
+ audio::-webkit-media-controls-panel {
+ background-color: #0d0d0b5e;
+ color: #0d0d0b5e;
+ padding: 0px;
+ }
+ audio{opacity: 0.5;}
+/* audio[controls]{background-color: #fff; color:#fff;} */
+.myAudio{
+         width: 133px;
+         height: 15px;
+        } 
+
+/* color of names */
+.fren-fontsize{color: black; text-align: center;}
+
+        /* size of fa icon */
+      .fa-volume-up{
+        font-size: 25px; color:black;
+        width: 36px;
+        height: 36px;
+        padding-bottom: 21px;}
+
+      .table-data-width .butto  .fa-1x {
+    font-size: 16px;
+    color: black;
+    width: 36px;
+    height: 19px;
+    padding-bottom: 21px;
+}
+
+/* speak button */
+      .button {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(180, 244, 31, 0.224);
+        border: 2px;
+      }
+/* the speak button */
+      .butto{
+        background-color: rgba(6, 77, 85, 0.236);
+        /* background-color: rebeccapurple; */
+        background-color: #818181;
+        background-color:rgba(255, 0, 0, 0.038);    
+        
+        color: red;
+        color: rgba(52, 55, 55, 0.762);
+        border-style: none;
+        margin-right: 0.5rem;
+      }
+
+      .butto h2{
+        background-color: rgba(180, 244, 31, 0.224); 
+        width: 20px; 
+        height: 20px; 
+        text-align: center; 
+        margin: auto;
+        
+      }
+      
+      .fa-university{
+        font-size: 16px; 
+        color:rgb(237, 232, 223);
+        margin-left: 1rem;
+        position: relative;
+        bottom: 1.32rem;
+      }
+
+      .fa-home{
+        font-size: 16px; 
+        color:rgb(236, 162, 12);
+        margin-left: 1rem;
+        position: relative;
+        bottom: 1.32rem;
+      }
+      
+/* audio ends */
+
+
+.table-data-width{ width: 10.8rem; text-align: center;colo: #f4e2f6; } /* the width that expands to fit rightly for the div containers */
+HPOSITION
+table-header
+reduction
+FONTSIZE
+butto
+.controls {
+        display: inline-flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 0.4rem;
+        
+      /* margin-top: 20px; */
+      }
+
+
+img[bongoimage]{
+  width:100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+/* table data image property */
+/* .tdata-img{
+        width: 215px;
+        margin-top:2rem;
+      } */
+
+
+    /* to confirm */
+/* degimage section width */
+
+/* grid col */
+
+    /* end of to confirm   */
+/* sidenavbar */
+/* begining of sidenav    */
+      .sidenav {
+        height: 100%;
+        /* width: 239px; */
+        width:14.9rem ;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0; 
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        color: #f1f1f1;
+
+        display: block;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+        color: #818181;
+
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: -40px;
+        right: 1.5rem;
+        font-size: 5rem;
+        color: rgba(255, 255, 0, 0.644);
+        /* margin-left: 50px; */
+      }
+      .main {
+        margin-left: 239px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px;
+        width: 67rem;
+      }
+      .icon{
+        padding:2rem 2rem 0rem 1rem;
+
+
+      }.tableContent-ion{
+        font-size:20px;
+        padding:0rem 0rem 0rem 0.5rem;
+
+      }
+
+      /* end of table css */
+
+
+
+
+
+
+
+
+
+      .column{
+        flex: 1; /* Equal width for both columns */
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin-right: 10px; /* Gap between columns */
+        width: 34.135rem;;
+      }
+
+      .column:last-child {
+        margin-right: 0; /* Remove margin from the last column */
+      }
+/* description */
+      .discription{
+        margin-top: 5rem;
+        height: 13rem;
+        width: 25rem;
+        background-position-x: center;
+        background-size: 18rem;
+        text-align: center;
+        position: relative;
+        left: 2.2rem;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        border-top-right-radius:30px;
+        border-top-left-radius:10px;
+        box-shadow: 2px 4px 2px rgb(86, 4, 239);
+      }
+
+      .col33{width:80%;}
+      .desc-position{
+        padding:1rem 0rem 0rem 0rem ;
+      }
+      #answer{
+        height: 8rem;
+        background-color: #111;
+        color: yellow;
+      }
+      h4{text-align: center;
+        color: chocolate;
+      }
+
+      .small{
+  font-size: 20px;
+}
+/* end of description */
+
+
+
+
+
+/* another trial */
+
+/* end of search section */
+
+    #home-bn{ text-align-last:right;}
+    #bn{height:22.5px;
+        /* padding-left: rem; */
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        border-top-right-radius:30px;
+        border-top-left-radius:10px;
+        box-shadow: 2px 2px 2px rgb(239, 4, 4);
+        transition-duration: 50s ease;
+   }
+    #bn:hover{background-color: #555;
+      
+  /* color: #ff0; */
+   }
+   
+
+    /*7 replace for combination */
+    
+      .HPOSITION .table-header{
+            height: 2rem;  
+            /* to bring back  */
+  /* height: 2rem; */
+      /* now added today for the headder alignment   */
+ /* this width 200 maked the header table expands or srink into fit mobile view */
+      /* width: 200px;  ewe image engl */
+      /* margin-left: 0.5rem;   */
+      }
+
+
+      /* the heading widths */
+.table-data-width,.table-header{
+        /* width:16rem;        */
+        width:14.28rem;
+        /* width: 10rem; */
+        width: 10.8rem;
+        /* working on the header again  */
+        /* width: 16.8rem; */
+
+               text-align:center;
+               /* color: rgba(0, 255, 251, 0.762); */
+              }
+
+
+    /* ewe picture english */
+    .FONTSIZE{
+          font-size: 3rem;
+  /* clear */
+          font-size: 1rem;
+          text-transform: uppercase;
+
+          /* padding-bottom: 4rem; */
+          /* color: #f0f0f041; */
+          /* color: rgba(0, 255, 251, 0.986); */
+        }
+/* text Area  alighn  */
+    .txtArea-align{
+      padding: 0.5rem 9.5rem 0rem 1rem;
+      height: 31px;
+      font-size: 10.5px;
+    }
+
+    /* button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 10px;
+    line-height: inherit;
+} */
+
+/* hhermon */
+
+
+/* table data container with */
+      .table-data-width{
+        width:226px;
+        /* clear */
+        /* width:26px; */
+        /* width:10rem; */
+/* to check this 16rem width with the 26px */
+                /* clear */
+                font-size: small;
+                /* text-align: center; */
+                padding-left: 0.3rem;
+                margin-top:11rem;
+        } 
+        
+/* degimage section width */
+
+div[toC] {
+    background-image: url(./image/1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin-top: 5rem; */
+    height: auto;
+    width: 100%;
+    background-position-x: center;
+    /* background-size: 18rem; */
+    text-align: center;
+    position: relative;
+    left: 0.2rem;
+    left: 2.2rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 4px 2px rgb(86, 4, 239);
+}
+
+
+/* to c backgrownd roll */
+
+div[toC] {
+    background-image: url(./image/1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin-top: 5rem; */
+    height: auto;
+    width: 100%;
+    background-position-x: center;
+    /* background-size: 18rem; */
+    text-align: center;
+    position: relative;
+    left: 2.2rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 4px 2px rgb(86, 4, 239);
+}
+/* end of bgRND roll */
+        .degimage {
+    /* width: 280px; */
+    width: 230px;
+    height: auto;
+    margin-top: 5rem;
+    /* margin-right: 7rem; */
+    padding-right: 1.5rem;
+}
+
+
+
+/* call to action section */
+.call-to-action{
+        border: #111; 
+        background-color: pink;
+        display: inline-block;
+        margin: 1rem 5rem;
+        height:max-content;
+        width:fit-content;
+        width:100%;
+        width:30%;
+        width:460px;
+        width: 345px;
+padding-top: 10px;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        z-index: -1;
+        box-shadow: 1px 2px 2px  rgb(33, 43, 25);
+
+
+      }
+      .row .logo{background-color: rgb(100, 86, 4); margin-left: 5.7rem;}
+/* vaxlem logo scetion */
+      .vaxlem-logo{
+        width: 50px;
+        height:50px;
+      }
+  /* to check */
+  .containa{
+    padding: 5rem 2rem 5rem 5rem;
+    text-align: center;
+    color: #fff;
+  }
+  /* a{
+    text-decoration: initial;
+  } */
+
+
+/* the pink sidenav column */
+.content {background: pink;
+        width:49.2rem;
+        position: absolute;
+        left:0.5rem ;
+        /* left:15rem ; */
+        top: 10rem;
+        /* width: 44rem; */
+        width: 34.135rem;        /* width: 31.5rem; */
+        /* width: 42.375rem; */
+        /* left:239px; */
+    }
+
+    img {
+    width: 200px;
+    width: 100%;
+    /* width: fit-content; */
+
+
+    height: 200px;
+    height: auto;
+text-align: center;
+    margin: 10px;
+    transition: 2s;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.acor-i {
+      color: #111;
+      color:#eb4d0a;
+    }
+.images{
+  width: 300px;
+  height:300px;
+  border-radius: 100%;
+}
+
+
+#video-frame{
+  width:100%;
+  height: 228px;
+  padding-left: 0.1rem;
+}
+.container-fluid{
+  width: 100%;
+  /* width: fit-content; */
+  /* width: 60%; */
+  text-align: center;
+  margin-top: 1rem;
+  margin: 1rem 5rem ;
+  /* margin: 1rem 1rem ;  */
+  /* okayyyy  but  reverse for now*/
+
+        color: rgba(0, 255, 251, 0.762);
+      color: rgba(248, 214, 23, 0.672);  
+  background-color: rgb(46, 3, 3);
+  box-shadow: 0rem 2rem 2rem 1rem royalblue;
+  
+}
+.container-flui{
+  text-align: center;
+  background-color: rgb(46, 3, 3);
+  box-shadow: 0rem 2rem 2rem 1rem royalblue;
+  margin: auto 10rem;
+  padding: 1rem;
+}
+.p1{
+  
+  font-family: monsterrat-bold;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  /* font-weight: bold; */
+  margin: 3rem 0rem;
+  color:rgba(248, 214, 23, 0.672);
+}
+
+/* end of grid section */
+
+
+
+/* links section */
+
+.container-flui[link] {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(46, 3, 3);
+    box-shadow: 0rem 2rem 2rem 7rem royalblue;
+}
+
+p[link] {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.social-icon[link] {
+    margin: 1rem;
+    color: rgba(255, 217, 0, 0.801);
+}
+
+.fa[link] {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+/* footer section */
+#footer{
+  height: fit-content;
+  text-decoration: none;
+  padding: 5rem 3rem;
+  background-color: black;
+  text-align:center;
+  color: #f9f5f59c;
+  font-size: 1.5rem;
+  font-family: montserrat-black;
+  padding: 2rem;
+  /* padding-top: 3rem; */
+  margin-top: 2rem;
+  /* margin-left:2px; */
+
+}
+/* end oflinks section */
+
+/* accordion */
+.all {
+  background-image: url(.//image/BEACH.jpg);
+  background-size: cover;
+  height: 700px;
+  padding: 0px 0px 0px 20px;
+  
+  
+  /* position: fixed; */
+  /* position: fixed; */
+  /* margin-left: 600rem; */
+  
+}
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+/* acordion container */
+.container-fluid [accordion] {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(46, 3, 3);
+    /* box-shadow: 0rem 2rem 2rem 7rem royalblue; */
+    width: 100%;
+}
+
+/* TRY AGAIN TO SUCED */
+.container-flui[accordion] {
+  width: 100%;
+  width: fit-content;
+  /* width: 60%; */
+  text-align: center;
+  margin-top: 1rem;
+  /* CHECKING FOR FULL SCREEN WITDH */
+  margin: 1rem 0rem ;
+        color: rgba(0, 255, 251, 0.762);
+      color: rgba(248, 214, 23, 0.672);  
+  background-color: rgb(46, 3, 3);
+  box-shadow: 0rem 2rem 2rem 1rem royalblue;
+  
+}
+/* END OF TRY AGAIN TO SUCEED */
+.date {
+      background-color: rgb(70, 69, 69);
+      color: white;
+      font-size: larger;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      outline: none;
+      font-size: 15px;
+      margin: auto;
+      margin-top: 20px;
+      transition: 0.4s;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .date:hover {
+      transform: scale(1.1);
+    }
+
+    .date:after {
+      content: "\1F447";
+      margin-left: 80%;
+    }
+
+    .active:after {
+      content: "\1F446";
+    }
+/* inside bg of notes */
+    .notes {
+      background-color: rgb(116, 115, 115);
+      color: white;
+      font-size: large;
+      padding: 0px 18px;
+      margin-top: 10px;
+      max-height: 0px;
+      transition: 0.4s;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    
+
+/* footer section */
+#footer{
+  height: fit-content;
+  text-decoration: none;
+  padding: 5rem 3rem;
+  background-color: black;
+  text-align:center;
+  color: #f9f5f59c;
+  font-size: 1.5rem;
+  font-family: montserrat-black;
+  padding: 1rem;
+  /* padding-top: 3rem; */
+  margin-top: 2rem;
+  /* margin-left:2px; */
+width: 100%;
+}
+
+
+
+
+/* MEDIAQUERRY */
+@media screen and (min-width: 1025px){
+ body {
+     font-size: 16px;
+ }
+
+ 
+ /* .............................. */
+ 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/* xxxxxxxxxxx--------------xxxxxxxxxxx */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+
+</style>
+</head>
+<body>
+<div>  
+    
+<!-- new header -->
+<!-- A1 -->
+<!-- header column -->
+<div class="side off nav" style="margin-left: 0.5rem;">
+    
+    <div><!-- ends at sidenav  true?-->
+      <!-- switch bgc in this header -->
+      <div class="header" style="display: non; margin-left: 0rem;">
+        <!-- hamburger --> 
+        <div  class="col"><!-- fisrt -->
+    <!-- <p fix="true"> The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:  WELCOME TO VAXLEM </p> -->
+    <h1 style="display: noe; ont-size:1rem; background-color:  #f4e2f6; color:rgba(0, 0, 128, 0.41); olor:#5021ff;
+    margin:0 auto 0 auto;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;">
+    WELCOME TO VAXLẼM 
+    </h1>
+<!-- background-color of vaxlem  is here-->
+  </div>
+<!-- menu -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span style="font-size: 50PX;position: absolute;bottom: 4.3rem;right: 1rem;">&times;</span></a> <BR></BR>
+<!-- <hr style=" border-width: 150px; border-style: dotted; padding: 0px; border: 0px; "> -->
+
+        <p class="p"><span class="pn" style="float: right; font-size:15px;cursor:pointer; display: n;" onclick="openNav()">&#9776; Menu</span> 
+          <!-- Cliquez sur Ouvrir pour sélectionner une rubrique ci-dessous. -->
+        </p>
+<!-- end of menu -->
+
+<!-- result list -->
+    <div id="searchResults"></div>
+    <div>
+<!-- <h1>Text-to-Speech Example</h1> -->
+<!-- text Area align -->
+      <!-- <div class="txtArea-align">
+          <textarea id="text" rows="1" cols="80" placeholder="Entrez le mot et cliquez sur le bouton parler pour être parlé pour vous. par exemple. banane"></textarea>
+      
+        <div class="">
+          <button id="speakButton">parler</button>
+          <button id="pauseButton">Pause</button>
+          <button id="resumeButton">reprendre</button>
+          <button id="stopButton">Arrêt</button>
+        </div>
+      </div> -->
+    </div>
+<!-- header details -->
+ <!-- remove n from column to bring back -->
+<div class=" table-colum" bgc="true" style="display: noe; ckground-color: rgba(6, 77, 85, 0.954);" >
+<table class="HPOSITION">
+<tbody>
+  <tr>
+      <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Language</h1></td>
+      <td class="table-data-width HPOSITION"><h1 class="table-header reduction">Image</h1></td>
+      <td class="table-data-width HPOSITION"><h1 class="table-header reduction">English</h1>
+  </tr></tbody></table>
+</div> 
+ </div>
+     
+    </div>
+        
+        
+<!-- div after header -->
+
+</div>
+<!-- end of new header a1 -->
+
+<!-- B2 -->
+
+<!-- header column marginLeft found at last here DONE today-->
+<div class="side off nav" style="margin-left: 0.5rem;">
+    
+  <div>
+    <!-- ends at sidenav  true? found the header positio alignment at lastoo 4 margin left -->
+    <div class="header" style="display: none; margin-left: 0rem; margin-top: 0rem; ">
+      <!-- hamburger --> 
+      <div  class="col"><!-- fisrt -->
+  <!-- <p fix="true"> The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:  WELCOME TO VAXLEM </p> -->
+  <h1 style="display: noe; ont-size:1rem; background-color:  #f4e2f6; color:rgba(0, 0, 128, 0.41); olor:#5021ff;
+  margin:0 auto 0 auto;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+  'Helvetica Neue', sans-serif;">
+  WELCOME TO VAXLẼM 
+  </h1>
+<!-- background-color of vaxlem  is here-->
+</div>
+<!-- menu -->
+      <p class="p"><span class="pn" style="float: right; font-size:15px;cursor:pointer; display: none;" onclick="openNav()">&#9776; Menu</span> 
+        <!-- Cliquez sur Ouvrir pour sélectionner une rubrique ci-dessous. -->
+      </p>
+<!-- end of menu -->
+
+      <!-- <h1> header </h1> -->
+      <!-- <h2 style="background-color: #f4e2f6; color: rgb(172, 127, 12);margin:0 auto 0 auto;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">TABLE DES MATIÈRES</h2>
+      <button style="font-size:15px;cursor:pointer" id="bn" class="btn pronunciation-chart"><a href="./index.html"><h2 ><i class="fa fa-file-audio-o fa-university" aria-hidden="true"> Tableau de Prononciation</i></h2></a></button> -->
+<!-- search section -->
+
+  <!-- <div class="navbar"> -->
+    <!-- <div class="col">
+      <span class="search-icon" onclick="searchNames()"><i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+      <input type="text" id="searchInput" placeholder="&#9776 Nom de la recherche" onkeydown="handleEnterKey(event)">
+  </div> -->
+      <!-- <div>cancelled
+          <span class="search-icon" onclick="searchBooks()">&#9776</span>
+          <input type="text" id="searchInput" placeholder="Enter item Name to search" onkeydown="handleEnterKey(event)">
+      </div> -->
+      
+  <!-- </div> -->
+
+<!-- result list -->
+  <div id="searchResults"></div>
+
+
+<!-- pronunciation chart -->
+      <!-- <p class="p"><span class="pn" style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; ouvrir</span> Cliquez sur Ouvrir pour sélectionner une rubrique ci-dessous.
+       <button style="font-size:15px;cursor:pointer" id="bn" class="btn"><a href="./dashboard.html"><h2><i class="fa fa-home " >foyer</i></h2></a></button> <button style="font-size:15px;cursor:pointer" id="bn" class="btn"><a href="./landingPage.html"><h2 ><i class="fa fa-university" aria-hidden="true"> Réserver un Cours</i></h2></a></button> -->
+<!-- call-line -->
+      <!-- <a href="#" style="color:white; font-size: xxx-large; position: absolute; right:5rem;top: 1.7rem;;">&#9743</a>
+  </p> -->
+  <!-- call-line -->
+<!-- <a href="tel:+233507902997" id="callLink" style="color:white; font-size: xxx-large; position: absolute; right:5rem;top: 1.7rem;;">&#9743</a>
+</p> -->
+
+      <div>
+<!-- <h1>Text-to-Speech Example</h1> -->
+<!-- text Area align -->
+    <!-- <div class="txtArea-align">
+        <textarea id="text" rows="1" cols="80" placeholder="Entrez le mot et cliquez sur le bouton parler pour être parlé pour vous. par exemple. banane"></textarea>
+    
+      <div class="">
+        <button id="speakButton">parler</button>
+        <button id="pauseButton">Pause</button>
+        <button id="resumeButton">reprendre</button>
+        <button id="stopButton">Arrêt</button>
+      </div>
+    </div> -->
+    </div>
+<!-- header details -->
+<div class=" table-column" bgc="true">
+<table class="HPOSITION">
+<tbody>
+<tr>
+    <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Language</h1></td>
+    <td class="table-data-width HPOSITION"><h1 class="table-header reduction">Image</h1></td>
+    <td class="table-data-width HPOSITION"><h1 class="table-header reduction">English</h1>
+</tr></tbody></table></div> 
+</div>
+   
+  </div>
+      
+
+</div>
+<!-- end of new header b2-->
+</div>
+  
+<!-- this is the full degimage column. -->
+<!-- <div style="width: fit-content; padding: 8% 2% 0%; margin: 2px; text-align: justify;display:non ;"> -->
+  <div style="width: fit-content; padding: 8% 0% 0%; margin:50px 5px 2px 11px; text-align: justify;display:non ;">
+
+  <BR></BR><BR></BR>
+  
+<!-- checking this -->
+<!-- the display and question section -->
+ 
+<div class="" style="width: 100%; display: non; margin-left: 0.5rem;">
+  <div class="row" style="background-color: #fff;color: black; width: 100%; padding-right: ;">
+  <div class="col-6" style="display: none; background-color: red; width: 50% ;">
+    <!-- cover-image -->
+    <div class="" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 100%; height: auto; margin: 20px auto; left:0px ">
+      <!-- <div class="" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 50%; height: 140px; margin: 20px auto; left:0px "> -->
+
+      <img class="degimag" src="./image/1.png" alt="cover-image" width="500" height="600"  style="width:100%; height: 100%; vertical-align: middle;">
+    
+    </div>
+  </div>
+<!-- to c -->
+<div toC="true" class="col-6" style="background-image: url(.//image/1.png);  text-align: center; width: 50%; height: auto; left:0px;  " >
+  <img class="degimage" src="./image/1.png" width="280" height="270" alt="">
+</div>
+
+  <!-- 3bar -->
+  <div class="col-6" style="background-color: rgb(34, 103, 22); width:50% ; padding-right: 0.2rem;">
+  <div class row>
+    <div class="col-5 discription" style="background-image: url(.//image/PAWPAW.jpg);  text-align: center; width: 70%; height: 120px; margin: 20px auto; left:0px; padding-top: ; " >
+      <!-- <img class="degimage" src="./image/1.png" alt=""> -->
+    </div>
+
+    <div class="col-4 discription" style="background-color: #5021ff;  text-align: center; width: 90%; height: 140px; margin: 20px auto; left: 0px;">
+      <div class="desc-position">
+        <i class="fa fa-hand-pointer-o fa-2x" style="padding-bottom: 0.5rem; padding: 0px 0px 20px; color: yellow;" aria-hidden="true"></i>
+        <h2 class="small " style="color: white; font-weight: 900;" >Nu Kae Nye Esia?</h2>
+      <h1 class="small " style="color: white; font-weight: 900;" >What Is This?</h1>
+      </div>
+    </div>
+    <div class="col-3 discription" id="answer" style=" text-align: center; width: 70%; height: 140px; margin: 20px  auto; left: 0px; padding-bottom: 4px;">
+      <h5 class="small" >ŋuɖoɖo</h5>
+      <h3 class="smal" style="color: red; background-colo: #ffffffc4;">Answer</h3>
+      <h3 class="small"  style="background-color: rgba(255, 255, 0, 0.059); margin-top: 27px; font-style: italic; font-weight: bold;">Aɖiba --- Pawpaw</h3>
+    </div>
+
+
+  
+  </div> 
+</div>
+</div><!-- row -->
+</div>
+
+<!-- tables section part 3 -->
+<hr id>
+<div> 
+  <!-- 2bring back -->
+    <!-- table-column       -->
+    <div class=" table-column" style="display: noe;">
+      <table>
+        <tbody
+          <tr>          
+<!-- <td class="table-data-width HPOSITION"> <h1 class="table-header reduction">Ewe Langue</h1></td> -->
+              <td class="table-data-width HPOSITION"> <h1 class="table-header reduction FONTSIZE">Ewe Language</h1></td>
+              <td class="table-data-width HPOSITION"><h1 class="table-header reduction FONTSIZE">Picture</h1></td>
+              <td class="table-data-width HPOSITION"><h1 class="table-header reduction FONTSIZE">English</h1>
+          </tr>
+
+          
+          <tr>
+            <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+              <!-- <h1>Gbɔ̃</h1>  -->
+              <button onclick="speakText('ee')" class="butto" id="eweText" lang="ee")">                
+                <!-- <i class="fa fa-volume-up fa-1x" aria-hidden="true"></i> -->
+                
+                <!-- audio settings -->
+              <h1 onclick="speakText('ee')" id="Gbɔ̃ gbor goat" id="eweText" lang="ee" >Gbɔ̃</h1>
+              <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+                            <source src=".//01 YELLOW SISI.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            <i class="fa fa-speaker" aria-hidden="true"></i>
+              </audio>
+              </button>
+            
+            
+            </td>               
+            <td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/goat.PNG"  alt="goat"></td>
+              <!-- <td class="va"> <h1>GOAT  -->
+                  <br>
+                  <td class="table-data-width">
+                    <!-- button ignored -->
+                    <button class="butto" onclick="speak('GOAT')">
+                    <h1 id="hbor goat"><font color="black">Goat</font> <br>
+                   
+                  </h1>
+                  <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+                    <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+                  </button>
+                </td>
+          </tr>
+          
+
+
+        <tr>
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+            <button class="butto" onclick="speak('Ami')">
+              <h1 id="ami oil" lang="ee">Ami</h1>
+                    <!-- <br>        -->
+<!-- audio settings -->
+            <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+              <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+              Your browser does not support the audio element.
+              <i class="fa fa-speaker" aria-hidden="true"></i>
+            </audio>
+          </button>
+
+<!-- controls -->
+    
+          </td>
+          <td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/oil (1).jpg" alt="oil"></td>
+          <td class="table-data-width">
+            <br>           
+            
+            <!-- <button class="butto" onclick="speak('oil')" > -->
+            <!-- <button class="button" onclick="speak('oil')" >
+  
+              <div>
+              <h1 id="Ami oil">
+                <span class="fren-fontsize">Oil</span>
+              </h1>
+             
+              <h2>
+                  <i class="fa fa-volume-up" aria-hidden="true" ></i>
+              </h2>
+  
+            </div>
+            </button> -->
+
+            
+            <button class="butto" onclick="speak('oil')" >
+  
+              <div>
+              <h1 id="Ami oil">
+                <span class="fren-fontsize">Oil</span>
+              </h1>
+             
+              <h2>
+                  <i class="fa fa-volume-up" aria-hidden="true" ></i>
+              </h2>
+  
+            </div>
+            </button>
+          </td>
+          
+      </tr>
+        <tr>
+            <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <button class="butto" onclick="speak('Anti')">
+                <h1 id="Aŋuti Orange" lang="ee">Aŋuti</h1> 
+<!-- audio settings -->
+                <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+                  <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  <i class="fa fa-speaker" aria-hidden="true"></i>
+                </audio>
+            </button>
+
+  <!-- controls -->
+      
+            </td>
+            <td class="table-data-width">
+              <img bongoimage="true" class="tdata-img" src="./image/ORANGE.jpg" alt="orange"></td>
+            <td class="table-data-width">
+              <button class="butto" onclick="speak('orange')">
+             
+              <h1 id="anuti orange">
+                <span class="fren-fontsize">Orange</span>
+              </h1>
+              <!-- <button class="button" onclick="speak('orange')"> -->
+              <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+                <!-- choice -->
+                <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+              </button>
+            </td>
+            
+        </tr>
+        <tr>
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+            <button class="butto" onclick="speak('nku')">
+              <h1 id="nku eye" lang="ee">ŋku</h1>
+<!-- audio settings -->
+            <audio  id="myAudio" style="width: 133px; height: 15px;" controls>
+              <source src="/audio/WHEN I AM DOWN.m4a"  type="audio/mpeg">
+              Your browser does not support the audio element.
+              <i class="fa fa-speaker" aria-hidden="true"></i>
+            </audio>
+
+            </button>
+
+<!-- controls -->
+    
+          </td>
+            <td class="table-data-width">
+              <img bongoimage="true" class="tdata-img" src="./image/EYE.jpg" alt="eye"></td>
+          <!-- <td class="va"> <h1>GOAT  -->
+              <br>
+              <td class="table-data-width">
+                <!-- <h1 id=" eye"> <br>
+                Eye
+              </h1> -->
+              
+              <br>           
+            
+              <!-- <button class="butto" onclick="speak('oil')" > -->
+              <!-- <button class="button" onclick="speak('eye')" >
+    
+                <div>
+                <h1 id="ŋku Eye">
+                  <span class="fren-fontsize">Eye</span>
+                </h1>
+               
+                <h2>
+                    <i class="fa fa-volume-up" aria-hidden="true" ></i>
+                </h2>
+    
+              </div>
+              </button>
+              sha384-QJHtvGhmr9XOIpI6YVutG -->
+              <button class="butto" onclick="speak('eye')" >
+    
+                <div>
+                <h1 id="ŋku Eye">
+                  <span class="fren-fontsize">Eye</span>
+                </h1>
+               
+                <h2>
+                    <i class="fa fa-volume-up" aria-hidden="true" ></i>
+                </h2>
+    
+              </div>
+              </button>
+            </td>
+      </tr>
+      <tr>
+          <td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+            <button class="butto" onclick="speak('Ayiɖa')">
+              <h1 id="ayiɖa comb" lang="ee">Ayiɖa</h1>
+<!-- audio settings -->
+            <audio id="myAudio"  controls style="width: 133px; height: 15px;">
+              <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+              Your browser does not support the audio element.
+              <i class="fa fa-speaker" aria-hidden="true"></i>
+            </audio>
+
+          </button>
+<!-- controls -->
+    
+          </td>
+          <td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/comb1.jpg" alt="comb"></td>
+          <td class="table-data-width">
+        
+
+            
+
+            <button class="butto" onclick="speak('comb')">
+             
+              <h1 id="ayida comb">
+                <span class="fren-fontsize">Comb</span>
+              </h1>
+              <!-- <button class="button" onclick="speak('orange')"> -->
+              <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+                <!-- choice -->
+                <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+            </button>
+          </td>
+          
+      </tr>
+<!-- the rest of the content table --> 
+<tr>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+  <button class="butto" onclick="speak('Aforkpodzi')">
+    <h1 id="Afɔkpodzi heel" lang="ee">Afɔkpodzi</h1> 
+<!-- audio settings -->
+  <audio  id="myAudio"  controls style="width: 133px; height: 15px;">
+    <source  src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+    <i class="fa fa-speaker" aria-hidden="true"></i>
+  </audio>
+
+  </button>
+<!-- controls -->
+
+</td>
+<td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/HEEL.jpg" alt="bongo"></td>
+<td class="table-data-width">
+  
+  <button class="butto" onclick="speak('heel')">
+             
+    <h1 id="Afɔkpodzi heel">
+      <span class="fren-fontsize">Heel</span>
+    </h1>
+    <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+      <!-- choice -->
+      <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+    </button>
+</td>
+
+</tr>
+
+<tr>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+  <button class="butto" onclick="speak('Ariba')">
+    <h1 id="Aɖiba Pawpaw" lang="ee">Aɖiba</h1>     
+<!-- audio settings -->
+    <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+      <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+      <i class="fa fa-speaker" aria-hidden="true"></i>
+    </audio>
+
+    </button>
+
+<!-- controls -->
+
+</td>
+<td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/PAWPAW.jpg" alt="pawpaw"></td>
+<td class="table-data-width">
+   <!-- her -->
+  <button class="butto" onclick="speak('Pawpaw')">
+             
+    <h1 id="Aɖiba pawpaw">
+      <span class="fren-fontsize">Pawpaw</span>
+    </h1>
+    <!-- <button class="button" onclick="speak('orange')"> -->
+    <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+      <!-- choice -->
+      <h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+    </button>
+</td>
+
+</tr>
+
+<tr>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+  <button class="butto" onclick="speak('Apel')">
+    <h1 id="apel apple" lang="ee">Apel</h1> 
+<!-- audio settings -->
+  <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+    <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+    <i class="fa fa-speaker" aria-hidden="true"></i>
+  </audio>
+  </button>
+
+<!-- controls -->
+
+</td>
+<td class="table-data-width"><img bongoimage="true" class="tdata-img" src="./image/APPLE.jpg" alt="bongo"></td>
+<td class="table-data-width">
+  <!-- <br>            -->
+            
+              <button class="butto" onclick="speak('Apple')" >
+    
+                <div>
+                <h1 id="apel Apple">
+                  <span class="fren-fontsize">Apple</span>
+                </h1>
+               
+                <h2>
+                    <i class="fa fa-volume-up" aria-hidden="true" ></i>
+                </h2>
+    
+              </div>
+              </button>
+            </td>
+</td>
+
+</tr>
+<tr>
+<td  class="table-data-width" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+  <button class="butto" onclick="speak('Sabala')">
+    <h1 id="sabala onion" lang="ee">Sabala</h1>    
+<!-- audio settings -->
+  <audio id="myAudio" style="width: 133px; height: 15px;" controls>
+    <source src="/audio/WHEN I AM DOWN.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+    <i class="fa fa-speaker" aria-hidden="true"></i>
+  </audio>
+
+</button>
+<!-- controls -->
+
+</td>
+<td class="table-data-width"><img  bongoimage="true" class="tdata-img" src="./image/onion.jpg" width="80%" height="auto" alt="bongo"></td>
+<td class="table-data-width">
+  <button class="butto" onclick="speak('Onion')">
+
+  <h1 id="sabala onion">
+    <span class="fren-fontsize"> Onion</span>
+  </h1>
+  <!-- <button class="button" onclick="speak('Onion')"> -->
+  <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+<h2><i class="fa fa-volume-up" aria-hidden="true"></i></h2>
+  </button>
+</td>
+
+</tr>           
+          </tbody>
+      </table>
+    </div>
+</div>
+
+  
+</div>
+
+<!-- taken out of highligt and fix nav-- void>
+<!-- MENU  3rd-->
+
+<!-- SIDE OF SIDENAV BEGINS content  -->
+
+<!-- menu -->
+ 
+<div id="mySidenav" class="sidenav">
+    <div>
+        <!-- controls -->
+        <!-- <a href="./ENG1.html"><i class="fa fa-info-circle  fa-1x icon" aria-hidden="true"></i> -->
+            <BR></BR> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span style="font-size: large; position: absolute;bottom: 3.5rem;right: 3.8rem;">close</span> &times;</a><BR></BR>
+          <hr style=" border-width: 150px; border-style: dotted; padding: 0px; border: 0px; ">
+    </div>
+    <!-- <a href="./about/index.html"><i class="fa fa-info-circle  fa-1x icon" aria-hidden="true"></i>
+      About</a> -->
+
+    <a href="./about.html"><i class="fa fa-info-circle  fa-1x icon" aria-hidden="true"></i>
+      About</a>
+    <a href="./landingPage.html"><i class="fa fa-arrow-circle-left fa-1x icon" aria-hidden="true"></i>Go Back
+    </a>
+    <a href="./FRENCH.html"><i class="fa fa-flag-checkered fa-1x icon" aria-hidden="true"></i>
+      French</a>
+    <a href="#footer"><i class="fa fa-address-card-o fa-1x icon" aria-hidden="true"></i>Contact</a>
+    <hr style=" border-width: 150px; border-style: dotted; padding: 0px; border: 0px; ">
+    
+    <!-- table of content -->
+    
+    <div>
+        <ol start="1">  
+          
+           
+       <li><a href="./tableofcont.html/alphabet.html"><i class="fa fa-sort-alpha-asc fa-1x" aria-hidden="true"></i>
+         <span class="tableContent-ion"> ALPHABETS</span></a></li>
+       <li><a href="./numeral1.html"><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+         <span class="tableContent-ion" >NUMERALS-1</span> </a></li>
+       <li><a href="./tableofcont.html/animal .html"><i class="fa fa-paw" aria-hidden="true"></i>
+       
+        <span class="tableContent-ion" >ANIMALS</span></a></li>
+
+        <li><a href="./tableofcont.html/food.html">    <i class="fa fa-apple" aria-hidden="true"></i>
+          <span class="tableContent-ion" >FRUITS</span></a>
+         </li>
+
+
+       <li><a href="./tableofcont.html/home_items.html">    <i class="fa fa-bicycle" aria-hidden="true"></i>
+         <span class="tableContent-ion" >HOME-ITEMS</span></a></li>
+       <li><a href="./tableofcont.html/action _words.html">    <i class="fa fa-comments-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" >ACTION WORDS</span></a></li>
+       <li><a href="./tableofcont.html/time_and_seasons.html">    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+         <span class="tableContent-ion" > TIMES AND SEASONS</span></a></li>
+       <li><a href="./animal.html">    <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+         <span class="tableContent-ion" >FOODS [cereals, vegetable, tubers and fruits]</span></a>
+        </li>
+       <li><a href="./tableofcont.html/body_parts.html">    <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+         <span class="tableContent-ion" >BODY PARTS</span></a></li>
+       <li><a href="./tableofcont.html/bird .html"><i class="fa fa-grav" aria-hidden="true"></i>
+         <span class="tableContent-ion" > BIRDS</span></a></li>
+       <li><a href="./tableofcont.html/days.html"><i class="fa fa-history" aria-hidden="true"></i>
+         <span class="tableContent-ion" >DAYS</span></a></li>
+       <li><a href="./tableofcont.html/month.html"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" >MONTHS</span></a></li>
+       <li><a href="./tableofcont.html/times.html"><i class="fa fa-clock-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" >TIMES</span></a></li>
+       <li><a href="./tableofcont.html/symbols.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" >SYMBOLS</span></a></li>
+         <li><a href="./numerals _ll.html">    <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+           <span class="tableContent-ion" >NUMERALS-2</span> </a></li>
+         
+       <li><a href="./tableofcont.html/people and places.html">   <i class="fa fa-user-md" aria-hidden="true"></i> 
+         <span class="tableContent-ion" >PEOPLE AND PLACES</span></a></li>
+       <li><a href="./tableofcont.html/COLOR.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+         <span class="tableContent-ion" > color</span></a></li>
+       
+         <li><a href="./tableofcont.html/workbook.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <span class="tableContent-ion" > WORK BOOK</span></a></li>
+        
+         <li><a href="./tableofcont.html/sentences.html">    <i class="fa fa-language" aria-hidden="true"></i>
+         <span class="tableContent-ion" >SIMPLE SENTENCE</span></a</li>
+       </ol>
+         <!-- <br>
+     </div> -->
+     <!-- end of sidenav -->
+    
+    
+    </div>
+    </div>
+ 
+<!-- END OF SIDENAV BEGINS CONTENT WND -->
+
+<!-- call to action -->
+<div class="">
+  <div class="">
+  <div class="row">
+  <div class="call-to-action col col-7 logo" style="color: rgb(100, 86, 4); padding:1rem ;"><h2>VA XLẼM</h2><img class="vaxlem-logo"src="./image/logo.png" alt=""></a></div> <BR></BR>
+
+
+  <!-- to link -->
+<a href="https://selar.co/z32k">
+<div class="call-to-action col col-2">
+    <i class="fa fa-download fa-3x" aria-hidden="true" style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true">
+    <span style="font-size: large; font-weight: bold; padding-left: 1rem;"> <br>Download the full Book NOW</span>
+    </i>
+
+</div>
+</a>
+
+
+
+<a href="https://selar.co/z32k">
+  <div class="call-to-action col col-2">
+      <i class="fa fa-users fa-3x" aria-hidden="true" style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true">
+      <span style="font-size: large; padding-left: 1rem;"><br> Plan a Lesson Now</span>
+      </i>
+  
+  </div>
+</a>
+
+  </div>
+
+</div>
+</div>
+
+</div>
+
+<!-- END OF CALL TO ACTION -->
+
+<!-- the contacts column of call to action -->
+
+<div class="container-fluid" style="display: noe;">
+  <div class="row">
+    <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: blac; height-500px;">
+      <p class="p1">I love the book try to get a Copy</p>
+            <img class="images" src="./image/5.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
+    </div>
+<!-- video section -->
+    <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: old;">
+      <p class="p1">The electronic version is great and interactive, subscribe today</p>                
+                <video id="video-frame" width="100%" height= "100%" controls>
+                  <source src="./image/VID-20230213-WA0025kids liabray tablet.mp4" type="video/mp4">
+                </video>
+
+    </div>
+
+    <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px;">
+      <p class="p1">the electronic version is flexible </p>
+      <img class="images" src="./image/3.jpg" alt="" nstyle=" width: 300px; height: 300px; border-radius: 100%;">
+    </div>
+    <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: old;">
+      <div class="row">
+        <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px">
+          <div class="col col-sm-12 col-md-6 col-lg-6" style="background-color: lack; height-500px;">
+            <!-- <p class="p1">download E-book</p> -->
+            <!-- <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true"><span style="font-size: large;">Commandez le livre complet MAINTENANT</span></i></a> -->
+          </div> 
+          <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgba(248, 214, 23, 0.672); padding:1px ; margin-left: 2rem;" aria-hidden="true"></i><BR></BR><span style="font-size: large;">Order the full Book Now</span></a>
+
+        </div>
+        <div class="col col-sm-12 col-md-6 col-lg-6" style="height-500px; background-color: ed;">
+          <div class="col col-sm-12 col-md-6 col-lg-6" sstyle="background-color: black; height-500px;">
+            <!-- <p class="p1">télécharger le livre électronique</p> -->
+            <!-- <a href="https://selar.co/z32k"><i class="fa fa-arrow-down fa-5x"  style="color: rgb(100, 86, 4); padding:1rem ;" aria-hidden="true"><span style="font-size: large;">Télécharger le livre complet MAINTENANT</span></i></a> -->
+            <!-- <a href="https://selar.co/z32k"><i class="fa fa-cart-arrow-down fa-5x"  style="color: rgba(248, 214, 23, 0.672); padding:1rem ; margin-left: 10rem;" aria-hidden="true"><span style="font-size: large;">Order the full book NOW</span></i></a> -->
+
+          </div>
+
+        </div>
+    </div>
+
+    </div>
+    
+    
+  </div>
+
+</div>
+<!-- end  -->
+
+
+<!-- footer -->
+<!-- ABOUT LINKS SECTION -->
+<hr>
+<div class="discriptio  container-fluid" link="true">
+  <footer id="footer">Contact Details
+    <br>
+      <a href="mailto:vaxlem5@gmail.com"><i class="social-icon fa fa-envelope"  link="true" alt="e-mail"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61561739258628&mibextid=ZbWKwL"><i class="social-icon fa fa-facebook" link="true" alt="fbook"></i></a>
+      <a href="https://twitter.com/VaXlem?s=08"><i class="social-icon fa fa-twitter" link="true" alt="twitter"></i></a>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i link="true" class="social-icon fa fa-linkedin"></i></a>
+      <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram" link="true"></i></a>
+    
+  <p link="true" >© <span id="year">2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLẽMStore. <br> All rights reserved.
+  </p>
+    </footer>
+</div>
+<!-- END OF ABOUT links section -->
+
+
+
+<!-- <hr> -->
+<!-- accordion section -->
+<div class="container-fluid" accordion="true" style="display: noe;">
+  <div class="all" height="150rem" style="background-image: url(./image/BEACH.jpg);">
+      <header>
+        <button class="date">Users' Experience<br />Kids</button>
+      <div class="notes">
+        <div class="container-fluid flex"></div>
+        <div class="row">
+        <div class="col " style="background-color: #eb4d0a;"><img class="userimage" src="./image/sit to read.jpg" alt="kids" tyle="width: auto; height: auto; position: relative;right: 1.1rem;">
+        <!-- </div> -->
+          <div class="col " style="background-color: #eb4d0a; width: 100%; margin: 10px;">
+            <p style="padding: 1rem ; text-align: justify; ">
+              From the first time we discovered this book, we became happy. We can read in our local dialect. <br> The book is so good that you can't put it down. <br> Our Mother bought us the paper copy. And Father downloaded
+              the online version so we can use it on his phone anywhere. <br>
+              It's good for every child to have. <span><a  href="https://selar.co/z32k">
+                <h4 style="margin-top: 1rem;  
+                font-size: 2rem;
+                color: white;
+                margin: 1rem;
+            "> BUY ONE<i style="    font-size: 3em;
+    color: white;
+    padding-left: 1rem;
+" class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i></a>
+          </h4></span>
+            </p></div>
+        </div>
+        </div>
+      </div>
+      </header>
+  
+      <button class="date">User 2 <br />Foreigners</button>
+      <div class="notes">
+        <div class="container-fluid flex"></div>
+        <div class="row">
+          <div class="col" style="background-color: #eb4d0a; padding: 1rem ; text-align: justify;  ">
+            <h1 style="padding: 1rem ; ">
+              I am a foreign parent in Ghana. The good thing is that this book, VA-XLẼM helped my family and friends learn a Ghanaian language
+              <span>
+                <a style=": #f1f1f1;" href="https://selar.co/z32k">
+                <p style="  
+                font-size: 2rem;
+                color:white;
+                margin: 1rem;
+                text-align: center;
+            "> BUY ONE
+                            <i class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i>
+
+                               <!-- <i class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i> -->
+           </a></p>
+          </span>
+        </h1>
+        <hr>
+        <div class="col" style="background-color: #eb4d0a; "><img src="./image/parent child.jpg " alt="Foreiner"style="width: 100%; height: auto; position: relative;right: 1rem; top: 0.5rem; bottom:1rem; border-radius:10%; padding:1rem;">
+        </div>
+      </div>
+
+        </div>
+      </div>
+  
+      <button class="date">User 3 <br />Newbies</button>
+      <div class="notes">
+        <div class="container-fluid flex"></div>
+        <div class="row">
+
+          
+        <!-- ahavi la perfect one-->
+        
+        <div class="col" style="background-color: #eb4d0a; background-color: #420aeb4a;"><img src="./image/Gifty Xoese 20180422_211439.jpg " alt="Newbie"style="width: 100%; height: auto; position: relative;right: 1rem; top: 0.5rem; bottom:1rem; border-radius:100%; padding:1rem;">
+        </div>
+<hr>
+
+        <div class="col" style="background-color: #eb4d0a; background-color: #420aeb; padding: 1rem ; text-align: left;  ">
+          <h1 style="padding: 1rem ; color: rgba(255, 255, 255, 0.864);">
+            Hi! It's PHILL & RENCE <br> VA-XLẼM helped us learn to speak and write basic ENGLISH and FRENCH. <BR></BR> We recommend it to anyone learning French and English for the first time. <BR></BR> It's very easy. <br> You can choose the hard copy or have the soft copy on your Phone/Computer.
+           <br><button style="background-color:#632616; border-radius: 10px; border-color: #eb4d0a; border-width: 2px; text-align: center; margin-top: 2rem;"> <span>
+              <a style=": #f1f1f1;" href="https://selar.co/z32k">
+              <p style="  
+              font-size: 2rem;
+              color:white;
+              margin: 1rem;
+              text-align: center;
+          "> <span style="border-width: 1rem;">BUY ONE</span>
+             
+              <i class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i>
+         </a></p>
+        </span> 
+      </button>
+      </h1>
+     
+        </div>
+
+        </div>
+      </div>
+  
+  
+      <button class="date">Next User <br>Parents</button>      
+      <div class="notes">
+        <div class="container-fluid flex"></div>
+        <div class="row">
+
+
+      
+        <!-- avalavi again -->
+
+
+        <div class="col" style="background-color: #eb4d0a; background-color: pink;"><img src="./image/cin.jpeg" alt="Parent"style="width: 100%; height: auto; position: relative;right: 1rem; top: 0.5rem; bottom:1rem; border-radius:20%; padding:1rem;">
+        </div>
+<hr>
+
+        <div class="col" style="background-color: #eb4d0a; background-color: #420aeb; padding: 1rem ; text-align: left;  ">
+          <h1 style="padding: 1rem ; color: rgba(255, 255, 255, 0.864);">
+            VAXLẼM is good for parents to use to train their children to learn language skills. Especially if they are beginning to acquire speech. The good thing is that it is also available in a soft copy format.
+           <br><button style="background-color:#632616; border-radius: 10px; border-color: #eb4d0a; border-width: 2px; text-align: center; margin-top: 2rem;"> <span>
+              <a style=": #f1f1f1;" href="https://selar.co/z32k">
+              <p style="  
+              font-size: 2rem;
+              color:white;
+              margin: 1rem;
+              text-align: center;
+          "> <span style="">BUY ONE</span>
+             
+              <i class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i>
+         </a></p>
+        </span> 
+      </button>
+      </h1>
+     
+        </div>
+
+        <!-- end -->
+
+        </div>
+      </div>
+  
+    <!-- another user -->
+      <button class="date"> Another User <br />Teachers</button>      <div class="notes">
+        <div class="container-flui flex"></div>
+        <div class="row">
+
+
+          <div class="col" style="background-color: #eb0a6f; ">
+            <p style="padding: 2rem 3rem 0rem 3rem;text-align: justify; font-size: larger; font-weight: bold;">
+              As a teacher, I really found VA-XLẼM very useful. I recommend it to all parents and learners. 
+              <br>
+              <button style="background-color:#632616; border-radius: 10px; border-color: #eb4d0a; border-width: 2px; text-align: center; margin-top: 2rem;"> 
+                <span>
+                <a style=": #f1f1f1;" href="https://selar.co/z32k">
+                <p style="  
+                font-size: 2rem;
+                color:white;
+                margin: 1rem;
+                text-align: center;
+            "> <span style="">BUY ONE</span>
+               
+                <i class="fa fa-cart-plus acor-i fa-3x" aria-hidden="true"></i>
+           </a></p>
+          </span> 
+        </button></h4></span>
+            </p>
+        </div>
+
+        <hr>
+          <!-- <div class="col col-sm-7" style="background-color: #eb0a6f;"><img src="./image/TEACHER.jpg" alt="kids" style="width: auto; height: auto; position: relative;right: 1.1rem;"></div> -->
+          <div class="col" style="background-color: #eb4d0a; background-color: #eb0a6f;"><img src="./image/TEACHER.jpg" alt="teacher"style="width: 100%; height: auto; position: relative;right: 1rem; top: 0.5rem; bottom:1rem; border-radius:20%; padding:1rem;">
+          </div>
+        </div>
+      </div>
+  
+  </div>
+
+</div>
+
+
+<!-- script -->
+<div>
+
+
+<!-- end of accordion -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+ <!-- Option 2: Separate Popper and Bootstrap JS -->
+ 
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>        
+
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "260px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<!-- accordion -->
+<script>
+var acc = document.getElementsByClassName("date");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function () {
+ this.classList.toggle("active");
+ var panel = this.nextElementSibling;
+ if (panel.style.maxHeight) {
+   panel.style.maxHeight = null;
+ } else {
+   panel.style.maxHeight = panel.scrollHeight + "px";
+ }
+});
+}
+</script>
+<script src="./app.js"></script>
+<script>
+function speak(word) {
+ const utterance = new SpeechSynthesisUtterance(word);
+ speechSynthesis.speak(utterance);
+}
+</script> 
+<!-- text to speech contol -->
+<script>
+// Check if browser supports the Web Speech API
+if ('speechSynthesis' in window) {
+const synth = window.speechSynthesis;
+const textInput = document.querySelector('#text');
+const speakButton = document.querySelector('#speakButton');
+const pauseButton = document.querySelector('#pauseButton');
+const resumeButton = document.querySelector('#resumeButton');
+const stopButton = document.querySelector('#stopButton');
+let utterance = new SpeechSynthesisUtterance();
+
+// Event handlers
+speakButton.addEventListener('click', () => {
+ if (textInput.value !== '') {
+   utterance.text = textInput.value;
+   synth.speak(utterance);
+ }
+});
+
+pauseButton.addEventListener('click', () => {
+ synth.pause();
+});
+
+resumeButton.addEventListener('click', () => {
+ synth.resume();
+});
+
+stopButton.addEventListener('click', () => {
+ synth.cancel();
+});
+} else {
+// Web Speech API is not supported
+console.log('Web Speech API is not supported by this browser.');
+}
+</script>
+<!-- call interface -->
+
+<script>
+var callLink = document.getElementById('callLink');
+
+callLink.addEventListener('click', function(event) {
+// Prevent the default behavior of following the link
+event.preventDefault();
+
+// Perform additional actions before making the call, if needed
+
+// Use any custom JavaScript logic here
+
+// Redirect to the phone app and initiate the call
+window.location.href = callLink.getAttribute('href');
+});
+</script>
+<!-- search code -->
+
+
+<script>
+// JavaScript code to handle the search functionality
+function searchNames() {
+var names = ["gbor goat", "ami oil", "Aforkpodzi heel", "apel apple", "nku eye", "norti nose", "ayiɖa comb", "Aɖiba pawpaw", "anuti orange", "sabala onion"];
+var searchQuery = document.getElementById("searchInput").value;
+var results = [];
+
+for (var i = 0; i < names.length; i++) {
+ if (names[i].toLowerCase().includes(searchQuery.toLowerCase())) {
+   results.push(names[i]);
+ }
+}
+
+var searchResultsContainer = document.getElementById("searchResults");
+searchResultsContainer.innerHTML = "";
+
+if (results.length > 0) {
+ var resultsHtml = "<p>Search results:</p>";
+ for (var j = 0; j < results.length; j++) {
+   var link = '<a href="#' + encodeURIComponent(results[j]) + '">' + results[j] + '</a>';
+   resultsHtml += link + "<br>";
+ }
+ searchResultsContainer.innerHTML = resultsHtml;
+} else {
+ searchResultsContainer.innerHTML = "No matching name found.";
+}
+}
+
+function handleEnterKey(event) {
+if (event.keyCode === 13) {
+ searchNames();
+}
+}
+</script>
+<!-- date change script  -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+ // Get the current year
+ var currentYear = new Date().getFullYear();
+
+ // Find the element in your footer where the year is displayed
+ var yearElement = document.getElementById('year');
+
+ // Update the year in the footer
+ if (yearElement) {
+     yearElement.textContent = currentYear;
+ }
+});
+</script>
+
+<script>
+  function speakText(language) {
+      let text;
+      if (language === 'ee') {
+          text = document.getElementById("eweText").textContent;
+      } else if (language === 'fr') {
+          text = document.getElementById("frenchText").textContent;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language; // Set the language ('ee' for Ewe, 'fr' for French)
+
+      // Optional: Adjust the voice, pitch, and rate
+      utterance.pitch = 1;
+      utterance.rate = 1;
+
+      speechSynthesis.speak(utterance);
+  }
+</script>
+</div>
+</body>
+</html>
