@@ -1,0 +1,15 @@
+
+
+
+/* CSS (in style.css file): */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#result {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+

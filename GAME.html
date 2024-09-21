@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shuffle Game</title>
+  <!-- <link rel="stylesheet" href="1style.css"> -->
+  <style>
+
+
+    /* CSS (in style.css file): */
+    
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    #result {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+  <h1>Shuffle Game</h1>
+  <div id="result"></div>
+  <button id="play-btn">Play</button>
+  <button id="reset-btn" style="display:none;">Reset</button>
+
+  <script src="script.js"></script>
+  <script>
+//   JavaScript (in script.js file):
+
+    let numbers = Array.from({length: 20}, (_, i) => i + 1);
+    let resultDiv = document.getElementById('result');
+    let playBtn = document.getElementById('play-btn');
+    let resetBtn = document.getElementById('reset-btn');
+    
+    playBtn.addEventListener('click', shuffleGame);
+    resetBtn.addEventListener('click', resetGame);
+    
+    function shuffleGame() {
+      // Shuffle the numbers array
+      numbers = numbers.sort(() => Math.random() - 0.5);
+      
+      // Select a random number from the shuffled array
+      let drawnNumber = numbers[Math.floor(Math.random() * numbers.length)];
+      
+      // Display the result
+      resultDiv.innerText = `You drew: ${drawnNumber}`;
+      
+      // Hide play button, show reset button
+      playBtn.style.display = 'none';
+      resetBtn.style.display = 'block';
+    }
+    
+    function resetGame() {
+      // Reset the numbers array
+      numbers = Array.from({length: 20}, (_, i) => i + 1);
+      
+      // Clear the result display
+      resultDiv.innerText = '';
+      
+      // Show play button, hide reset button
+      playBtn.style.display = 'block';
+      resetBtn.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
+
+
+
+How it works:
+
+1. The HTML creates a simple page with a result display, play button, and reset button.
+2. The CSS styles the page.
+3. The JavaScript:
+    - Creates an array of numbers from 1 to 20.
+    - Defines two functions: shuffleGame and resetGame.
+    - Attaches event listeners to the play and reset buttons.
+4. When the play button is clicked:
+    - The shuffleGame function shuffles the numbers array.
+    - Selects a random number from the shuffled array.
+    - Displays the result.
+    - Hides the play button and shows the reset button.
+5. When the reset button is clicked:
+    - The resetGame function resets the numbers array.
+    - Clears the result display.
+    - Shows the play button and hides the reset button.
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shuffle Game</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+    
+            .result {
+                font-size: 48px;
+                margin: 20px;
+                color: #007bff;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 18px;
+                margin: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Shuffle Game (1 - 20)</h1>
+        <div class="result" id="result">Press Draw to start</div>
+        <button onclick="draw()">Draw</button>
+        <button onclick="reset()">Reset</button>
+    
+        <script>
+            function draw() {
+                // Get a random number between 1 and 20
+                var randomNumber = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("result").innerText = "You drew: " + randomNumber;
+            }
+    
+            function reset() {
+                // Clear the result
+                document.getElementById("result").innerText = "Press Draw to start";
+            }
+        </script>
+    
+    </body>
+    </html>
+    
