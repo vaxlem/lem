@@ -9,10 +9,6 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            background-image: url(./image/pineapple_124985672.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position:left;
         }
 
         .result {
@@ -45,7 +41,6 @@
             font-size: 24px;
             color: #333;
         }
-
         .view{
             font-size: 60px;
             text-decoration:underline;
@@ -61,21 +56,34 @@
     <button onclick="reset()">Reset</button>
 
     <div class="catalogue">
-        <h1>Last Played Results</h1>
+        <h2>Last Played Results</h2>
         <ul id="catalogue-list" class="catalogue-list">
             <!-- Last played results will appear here -->
         </ul>
     </div>
 
     <script>
-        // Array to store the last played results
+        // Array to store the available numbers
+        var availableNumbers = Array.from({ length: 20 }, (_, i) => i + 1);
         var playedResults = [];
 
         function draw() {
-            // Get a random number between 1 and 20
-            var randomNumber = Math.floor(Math.random() * 20) + 1;
+            // Check if any numbers are left to draw
+            if (availableNumbers.length === 0) {
+                document.getElementById("result").innerText = "No more numbers to draw!";
+                return;
+            }
+
+            // Get a random index from available numbers
+            var randomIndex = Math.floor(Math.random() * availableNumbers.length);
+            var randomNumber = availableNumbers[randomIndex];
+
+            // Remove the drawn number from the availableNumbers array
+            availableNumbers.splice(randomIndex, 1);
+
+            // Display the result
             document.getElementById("result").innerText = "You drew: " + randomNumber;
-            
+
             // Add the result to the playedResults array
             playedResults.push(randomNumber);
             
@@ -87,8 +95,14 @@
             var catalogueList = document.getElementById("catalogue-list");
             catalogueList.innerHTML = ''; // Clear the current list
 
-            // Populate the list with played results in reverse order (last played to first played)
-            playedResults.slice().reverse().forEach(function(result, index) {
+            // Populate the list with played results
+            // playedResults.forEach(function(result, index) {
+            //     var listItem = document.createElement("li");
+            //     listItem.innerText = "Result " + (index + 1) + ": " + result;
+            //     catalogueList.appendChild(listItem);
+            // });
+                // Populate the list with played results in reverse order (last played to first played)
+                playedResults.slice().reverse().forEach(function(result, index) {
                 var listItem = document.createElement("li");
                 listItem.innerText = "Result " + (playedResults.length - index) + ": " + result;
                 catalogueList.appendChild(listItem);
@@ -96,8 +110,11 @@
         }
 
         function reset() {
-            // Clear the current result without affecting the catalogue
+            // Clear the current result
             document.getElementById("result").innerText = "Press Draw to start";
+
+            // Reset the available numbers and played results, but preserve the catalogue
+            availableNumbers = Array.from({ length: 20 }, (_, i) => i + 1);
         }
     </script>
 
