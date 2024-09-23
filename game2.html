@@ -9,11 +9,24 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            background-image: url(./image/APPLE.jpg);
+            /* background-image: url(./image/APPLE.jpg); */
+    background-image: url(./image/pineapple_124985672.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position:center;
+            background-attachment: fixed;
+            /* position: fixed; */
         }
+
+        .div{
+             /* background-image: url(./image/pineapple_124985672.jpg); */
+             background-image: url(./image/bananan.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            scroll-behavior: smooth;
+            background-attachment: fixed;
+       }
 
         .result {
             font-size: 48px;
@@ -54,7 +67,7 @@
     </style>
 </head>
 <body>
-
+<div class="div">
     <h1 >fARM-<span class="view">2</span>-fORK</h1>
     <div class="result" id="result">Press Draw to start</div>
     <button onclick="draw()">Draw</button>
@@ -67,6 +80,7 @@
         </ul>
     </div>
 
+</div>
     <script>
         // Array to store the last played results
         var playedResults = [];
