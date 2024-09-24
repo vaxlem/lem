@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shuffle Game</title>
+    <title>Shuffle Sales</title>
     <style>
-         body {
+          body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
@@ -28,11 +28,11 @@
             background-attachment: fixed;
        }
 
-
         .result {
             font-size: 48px;
             margin: 20px;
             color: #007bff;
+        
         }
 
         button {
@@ -40,6 +40,51 @@
             font-size: 18px;
             margin: 10px;
             cursor: pointer;
+        }
+
+        /* more btn */
+        .button {
+            /* background-color: #f39c12; Orange background */
+            background-color: blue;
+            color: white;              /* White text */
+            padding: 12px 25px;         /* Padding */
+            font-size: 18px;            /* Font size */
+            border: none;               /* No border */
+            border-radius: 8px;         /* Rounded corners */
+            cursor: pointer;            /* Pointer/hand icon */
+            animation: bounce 2s infinite; /* Bouncing animation */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); /* No movement at key points */
+            }
+            40% {
+                transform: translateY(-30px); /* Move 30px up at 40% */
+            }
+            60% {
+                transform: translateY(-15px); /* Move 15px up at 60% */
+            }
+        }
+        /* reset */
+        .button2{
+            background-color: #e74c3c; /* Red background */
+            color: white;              /* White text */
+            padding: 12px 25px;         /* Padding */
+            font-size: 18px;            /* Font size */
+            border: none;               /* No border */
+            border-radius: 8px;         /* Rounded corners */
+            cursor: pointer;            /* Pointer/hand icon */
+            animation: rotate 5s infinite linear; /* Rotating animation */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg); /* Start rotation */
+            }
+            100% {
+                transform: rotate(360deg); /* Full 360 degree rotation */
+            }
         }
 
         .catalogue {
@@ -70,16 +115,12 @@
             margin-top: 20px;
             font-size: 18px;
             color: #28a745;
-        } 
-        
-        
+        }
         .view{
             font-size: 60px;
             text-decoration:underline;
             font-weight:bolder;
         }
-
-
     </style>
 </head>
 <body>
@@ -87,35 +128,30 @@
         <h1 >fARM-<span class="view">2</span>-fORK</h1>
         <div class="result" id="result">Press Draw to start</div>
         <button onclick="draw()">Draw</button>
-        <button onclick="reset()">Reset</button>
+        <button class="button2" onclick="reset()">Reset</button>
     
-    <!-- <h1>Shuffle Game (1 - 20)</h1>
-    <div class="result" id="result">Press Draw to start</div>
-    <button onclick="draw()">Draw</button>
-    <button onclick="reset()">Reset</button>
-     -->
     <div class="catalogue">
         <h2>Last Played Results</h2>
         <ul id="catalogue-list" class="catalogue-list">
             <!-- Last played results will appear here -->
         </ul>
-        <button id="more-button" onclick="toggleMore()">More</button>
+        <button class="button" id="more-button" onclick="toggleMore()">More</button>
     </div>
 
     <div class="reset-count" id="reset-count">Reset Count: 0</div>
-    <button onclick="showHistory()">Show Full History</button>
+    <button id="history-button" onclick="toggleHistory()">Show Full History</button>
 
-    <div class="history" id="history-list">
+    <div class="history" id="history-list" style="display: none;">
         <!-- Full history will appear here -->
     </div>
 </div>
-
     <script>
         var availableNumbers = Array.from({ length: 20 }, (_, i) => i + 1); // 1-20 numbers
         var playedResults = [];
         var allRoundsHistory = []; // Stores history of all rounds
         var resetCounter = 0; // Tracks number of times the end of draws reached
         var showMore = false; // Tracks whether to show more results
+        var historyVisible = false; // Tracks whether history is visible
 
         function draw() {
             if (availableNumbers.length === 0) {
@@ -176,6 +212,21 @@
             showMore = false; // Reset "More" state
             document.getElementById("more-button").innerText = "More"; // Reset button text
             updateCatalogue(); // Update the display
+        }
+
+        function toggleHistory() {
+            var historyList = document.getElementById("history-list");
+            if (historyVisible) {
+                // If the history is currently shown, hide it
+                historyList.style.display = "none";
+                document.getElementById("history-button").innerText = "Show Full History";
+            } else {
+                // If the history is currently hidden, show it
+                showHistory();
+                historyList.style.display = "block";
+                document.getElementById("history-button").innerText = "Hide Full History";
+            }
+            historyVisible = !historyVisible; // Toggle the visibility state
         }
 
         function showHistory() {
