@@ -43,7 +43,7 @@
         }
 
         /* more btn */
-        .button {
+        .button3 {
             /* background-color: #f39c12; Orange background */
             background-color: blue;
             color: white;              /* White text */
@@ -84,6 +84,31 @@
             }
             100% {
                 transform: rotate(360deg); /* Full 360 degree rotation */
+            }
+        }
+
+        .button {
+            background-color: #3498db; 
+            /* Blue background */
+            color: white;              /* White text */
+            padding: 12px 25px;         /* Padding */
+            font-size: 18px;            /* Font size */
+            border: none;               /* No border */
+            border-radius: 50px;        /* Rounded corners */
+            cursor: pointer;            /* Pointer/hand icon */
+            animation: pulse 2s infinite; /* Pulse animation, repeating infinitely */
+        }
+
+        /* Define the keyframes for the pulse effect */
+        @keyframes pulse {
+            0% {
+                transform: scale(1); /* Start at normal size */
+            }
+            50% {
+                transform: scale(1.2); /* Increase size to 120% at halfway */
+            }
+            100% {
+                transform: scale(1); /* Return to normal size */
             }
         }
 
@@ -139,7 +164,7 @@
     </div>
 
     <div class="reset-count" id="reset-count">Reset Count: 0</div>
-    <button id="history-button" onclick="toggleHistory()">Show Full History</button>
+    <button class="button3" id="history-button" onclick="toggleHistory()">Show Full History</button>
 
     <div class="history" id="history-list" style="display: none;">
         <!-- Full history will appear here -->
