@@ -122,21 +122,23 @@ p{
  <div class="container-fluid containa" >
 <div class="row">
                 <div class="col col-sm-12 col-md-6 col-lg-3">
-                  <p class="space1">J'adore le livre, j'essaie d'en obtenir un exemplaire</p>                  
-                  <a href="../image/mybookpics/fre alpha7.jpg"><img class="images" src="../image/mybookpics/fre alphabets.jpg" alt="" sstyle=" width: 300px; height: 300px; border-radius: 100%;"></a>
+                  <p class="space1">I love the book try to get a Copy</p>                  
+                  <a href="../image/mybookpics/alphabets.jpg"><img class="images" src="../image/mybookpics/alphabets.jpg" alt="" sstyle=" width: 300px; height: 300px; border-radius: 100%;"></a>
                 </div>
+
                 <div class="col col-sm-12 col-md-6 col-lg-3">
-                  <p>La version électronique est super et interactive, abonnez-vous dès aujourd'hui</p>                      <video id="video-frame" width="100%" height= "100%" controls>
+                  <p>The electronic version is great and interactive, subscribe today</p>                      <video id="video-frame" width="100%" height= "100%" controls>
                         <source src="../image/VID-20230213-WA0025kids liabray tablet.mp4" type="video/mp4">
                       </video>
                   </div>
                 <div class="col col-sm-12 col-md-6 col-lg-3">
-                  <p>La version électronique est super et interactive, abonnez-vous dès aujourd'hui</p>                  <img class="images" src="../image/mybookpics/alphabet22.jpg" alt="" style="width: 300px; height: 300px; border-radius: 30%;">
+                  <p>the electronic version is flexible </p>        
+                     <img class="images" src="../image/mybookpics/alphabet22.jpg" alt="" style="width: 300px; height: 300px; border-radius: 30%;">
                 </div>
                 <div class="col col-sm-12 col-md-6 col-lg-3">
-                  <p>Télécharger le livre complet</p>                 
-                  <button class="btn btn-primary btn-lg btn-dark btn-project contact-heading" type="button" onclick="alert('you are about to BUY VaXLem')" style="margin: 7rem auto;"><i class="fa fa-envelope " style="padding-right: 0.5rem;"></i><a href="https://selar.co/z32k">télécharger</a> </button> 
-                  <button class="btn btn-danger btn-lg light btn-project contact-heading" type="button" onclick="alert('you are about to go to homepage')" style="margin: 7rem auto;"><i class="fa fa-arrow-circle-left " style="padding-right: 0.5rem;"></i><a href="../ENGLISH1.html"><span style="color :white;"> Retourner</span> </button> </a>
+                  <p>Order the full Book Now</p>                 
+                  <button class="btn btn-primary btn-lg btn-dark btn-project contact-heading" type="button" onclick="alert('you are about to BUY VaXLem')" style="margin: 7rem auto;"><i class="fa fa-envelope " style="padding-right: 0.5rem;"></i><a href="https://selar.co/z32k">Download</a> </button> 
+                  <button class="btn btn-danger btn-lg light btn-project contact-heading" type="button" onclick="alert('you are about to go to homepage')" style="margin: 7rem auto;"><i class="fa fa-arrow-circle-left " style="padding-right: 0.5rem;"></i><a href="../ENGLISH1.html"><span style="color :white;"> Back</span> </button> </a>
   
                 </div>
                 
@@ -152,8 +154,23 @@ p{
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i class="social-icon fa fa-linkedin"></i></a>
     <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram"></i></a>
   
-<p>© 2023 HERMON SEL HAMMAH TETTEY VaxLẽmStore. <br> Tous droits réservés. </p>
+    <p link="true" >© <span id="year">2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLẽMStore. <br> All rights reserved.
+    </p>
+  
   </footer>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+     // Get the current year
+     var currentYear = new Date().getFullYear();
+    
+     // Find the element in your footer where the year is displayed
+     var yearElement = document.getElementById('year');
+    
+     // Update the year in the footer
+     if (yearElement) {
+         yearElement.textContent = currentYear;
+     }
+    });
+    </script>
 </body>
 </html>

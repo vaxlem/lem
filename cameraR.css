@@ -1,0 +1,226 @@
+body{
+    background-color: rgba(74, 4, 4, 0.347);
+    /* background-image:linear-gradient(90deg,red,blue,yellow); */
+
+}
+#footer {
+  text-decoration: none;
+  background-color: navy;
+  text-align:center;
+  color: #fff;
+  font-size: 14px;
+  font-family: montserrat-black;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+} 
+
+/* bubbles section */
+.fancy{
+  width: 50px;
+  height: 50px;
+  background-image:linear-gradient(35deg,white,rgb(255, 0, 115),rgba(150, 218, 24, 0.368),brown);
+  /* background-image:linear-gradient(90deg,red,blue,yellow);  */
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 14px;
+  color: rgba(13, 1, 1, 0.708);
+  text-align: center;
+  padding: 2px;
+  margin: 5px;
+}
+
+.x{
+  position: absolute;
+  left: 3rem;
+  top: 10rem
+
+}
+.xx{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width:10rem;
+    height: 10rem;
+    position: fixed;
+    z-index: -2;
+  }
+
+.y{
+  position: absolute;
+  left: 7rem;
+  /* bottom: 1rem; */
+
+}
+
+.z{
+  position: absolute;
+  right: 1rem;
+  top: 31rem;
+
+}
+
+.v{
+  position: absolute;
+  right: 2rem;
+  top: 32rem;
+
+}
+
+.w{
+  position: absolute;
+  right: 5rem;
+  top: 15rem;
+
+}
+
+.u{
+  position: absolute;
+  right: 7.2rem;
+  top: 69rem;
+  border-radius: 10px;
+  box-shadow: 1px 2px #d0d00adc;
+  z-index: 1;
+
+}
+
+.i{
+  color: red;
+  padding:0.5rem;
+}
+.thumb-bar {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.col{
+        color: burlywood;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background-color:#e79e4f4f ;
+        text-align: center;
+        margin: 1rem;
+        border-radius: 1rem;
+        box-shadow: #df2626aa;
+        z-index: 1;
+        box-shadow: 1px 2px 1px rgba(17, 15, 15, 0.568);
+
+}
+
+.col-5{
+    overflow-wrap: break-word;
+    line-break: auto;
+
+}
+.col-7{
+    padding: 0px;
+    background-image:linear-gradient(115deg,red,rgba(0, 0, 255, 0.366),rgba(255, 255, 0, 0.475), brown);
+    width:500px;
+    height: 500px;
+}
+/* add call to action */
+.add-call{
+    width: 17rem;
+    height:1.5rem; 
+    margin: 1rem; 
+    border-top-right-radius:21px;
+    /* box-shadow:2px 2px 2px  whitesmoke;  */
+    padding:2rem 0rem 2rem 0rem;
+    border-top-left-radius:21px; 
+    box-shadow: 1px 5px 7px 2px whitesmoke; 
+    font-size:14px;}
+
+.cardbody{width:auto;
+        background-color: #2125290d;
+        text-align:center;
+    }
+/*.navbar{} */
+
+.container-fluid{
+  text-align:center;
+}
+
+/* Optional: Hide horizontal scrollbar */
+.thumb-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+.thumb-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+.displayed-img {
+  /* height: auto;
+  max-width: 100%; */
+  width:19rem;
+  height: 20rem;
+}
+
+/* .full-img{
+
+} */
+
+
+/* img{
+
+} */
+
+/* .overlay{
+
+} */
+.ride-animation {
+          animation: ride-carousel 1s;
+        }
+      
+.darken {
+            filter: brightness(0.7);
+} 
+
+/* .dark{
+
+}
+
+.darken{
+
+} */
+      
+@keyframes ride-carousel {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+    
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  body {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+ 
+  }
+  /* .fancy {} */
+  .xx, .goodizsLogo{
+      position: absolute;
+      left: 1rem;
+      top: 0.1rem;
+      width:3rem;
+      height: 2rem;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      position: fixed;
+      z-index: -2;
+    }
+  .goodizsLogo{width: 3rem;
+
+  }
+  
+  }
+
+

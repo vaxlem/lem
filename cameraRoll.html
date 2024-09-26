@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodi🌻es</title>
+    <link rel="stylesheet" href="cameraR.css">
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
+    <link rel="icon" href="./image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col col-5 cardbody" style="width: 19rem">
+        <div class="navbar" fixed style="background-color:;">
+          <h1 style="float:left; color:black;">collection process you can trust</h1>
+          <button class="dark" onclick="toggleDarkenEffect()">Darken Screen</button>
+        </div>
+      
+        <div class="full-img">
+          <img class="displayed-img" src="./image/a.jpg" alt="Closeup" />
+          <div class="overlay"></div>
+        </div>
+      
+        <div class="thumb-bar">
+          <div class="thumb-container">
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/a.jpg" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/process goodies.png" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/c.jpg" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/d.jpg" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/b.png" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/f.jpg" alt="Closeup" onclick="showFullImage(this)" />
+            <img style="width: 30%; height: 4.5rem;" class="isplayed-img" src="./image/a.jpg" alt="Closeup" onclick="showFullImage(this)" />
+          
+            </div>
+        </div>
+      </div>
+      <div class="col col-7 cardbody">
+        <div class="row">
+          <div class="col-5 cardbody add-call" style="background-color: green;"><a href="https://wa.link/zye6sc" style="color: rgba(255, 255, 255, 0.591); text-decoration: none;"><i class="fa fa-whatsapp fa-3x" ></i> <span style="padding-left:1rem;">Whatsapp Us</span></a></div>
+          <div class="col-5 cardbody add-call" style="background-color: green;"> <a href="https://selar.co/z2w4" style="color: rgba(255, 255, 255, 0.591); text-decoration: none;"><i class="fa fa-cart-plus fa-3x"></i> <span style="padding-left:1rem;">ORDER NOW </span></a></div>
+          <div class="cardbody" style="width: 17rem; height:11rem; margin: 1rem; padding:4rem 0rem 1rem 0rem;background-image: url(./image/e.png); background-position-x:center;background-size: cover;"> </div>
+        </div>
+        
+
+      </div>
+      </div>
+      </div>
+      <div class="fancy x"> tasty</div>
+      <div class="fancy y"> safe</div>
+      <div class="fancy z"> pure</div>
+      <div class="fancy v"> good</div>
+      <div class="fancy w"> nice</div>
+      <div class="fancy xx"> <img class="goodizsLogo" src="./image/logo.png" alt="goodies logo" style="size: 5rem;"></div>
+
+      
+      
+        <button class="btn btn-dark u">
+          <a style="text-decoration: none;" href="mailto:monicanuworkpor@gmail.com"><i class="social-icon fa fa-comments-o" aria-hidden="true" alt="e-mail"></i>
+        give feedback 
+         </a>
+        </button>
+     
+        
+
+
+<!-- footer      -->
+ <div id="footer">
+WELCOME TO GOODIES COMPANY. WE SERVE YOUR QUEST
+<p style="color:#dcb035">'healthy eating _ healthy living'</p>
+<!-- <footer id="footer"  > -->
+  Contact Information
+  <br>
+  <a href="mailto:monicanuworkpor@gmail.com"><i class="social-icon fa fa-envelope i fa-2x" alt="e-mail"></i></a>
+  <a href="https://m.facebook.com/108526515626546/"><i class="i social-icon fa fa-facebook fa-2x" alt="fbook"></i></a>
+  <a href="#"><i class="i social-icon fa fa-twitter fa-2x" alt="twitter"></i></a>
+  <!-- <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i class="social-icon fa fa-linkedin"></i></a> -->
+  <a href="https://www.instagram.com/invites/contact/?i=1g8m0i8zhxmhc&utm content=rtfs9o2"><i class="i social-icon fa fa-instagram fa-2x "></i></a>
+
+<p style="color:#dcb035">© 2023 - All Rights Reserved.
+</p>
+<!-- </footer> -->
+      </div>
+      <script>
+        const fullImage = document.querySelector('.full-img img');
+        const thumbContainer = document.querySelector('.thumb-container');
+        const thumbImages = document.querySelectorAll('.thumb-container img');
+        const darkenButton = document.querySelector('.dark');
+        let isDark = false;
+        let scrollPosition = 0;
+      
+        function toggleDarkenEffect() {
+          if (isDark) {
+            fullImage.classList.remove('darken');
+            darkenButton.textContent = 'Darken';
+          } else {
+            fullImage.classList.add('darken');
+            darkenButton.textContent = 'Lighten';
+          }
+          isDark = !isDark;
+        }
+      
+        function showFullImage(element) {
+          fullImage.src = element.src;
+          rideThumbnailCarousel(element);
+        }
+      
+        function rideThumbnailCarousel(element) {
+          const currentIndex = Array.from(thumbImages).findIndex((img) => img === element);
+          const thumbWidth = thumbImages[0].offsetWidth;
+          const containerWidth = thumbContainer.offsetWidth;
+          const visibleThumbs = Math.floor(containerWidth / thumbWidth);
+      
+          if (currentIndex + visibleThumbs > thumbImages.length) {
+            const translateXValue = -(thumbWidth * (thumbImages.length - visibleThumbs));
+            thumbContainer.style.transform = `translateX(${translateXValue}px)`;
+            scrollPosition = translateXValue;
+          } else {
+            const translateXValue = -(thumbWidth * currentIndex);
+            thumbContainer.style.transform = `translateX(${translateXValue}px)`;
+            scrollPosition = translateXValue;
+          }
+        }
+      
+        thumbContainer.addEventListener('mousemove', handleCarouselScroll);
+      
+        function handleCarouselScroll(event) {
+          const scrollSpeed = 2;
+          const containerWidth = thumbContainer.offsetWidth;
+      
+          if (event.clientX > containerWidth - 100 && scrollPosition < 0) {
+            thumbContainer.style.transform = `translateX(${scrollPosition + scrollSpeed}px)`;
+            scrollPosition += scrollSpeed;
+          } else if (event.clientX < 100 && scrollPosition > -(thumbContainer.offsetWidth - containerWidth)) {
+            thumbContainer.style.transform = `translateX(${scrollPosition - scrollSpeed}px)`;
+            scrollPosition -= scrollSpeed;
+          }
+        }
+      </script>
+</body>
+</html>
+    
