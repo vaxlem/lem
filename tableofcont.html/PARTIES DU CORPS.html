@@ -29,7 +29,7 @@
 <style>
         /* Basic styling for demonstration */
         #none{display: none;}
-        
+        a{text-decoration: none;}
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -337,10 +337,24 @@ p{
         <a href="https://twitter.com/VaXlem?s=08"><i class="social-icon fa fa-twitter" alt="twitter"></i></a>
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:6966952343951003648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6966952343951003648%29"><i class="social-icon fa fa-linkedin"></i></a>
         <a href="https://instagram.com/stories/vaxlem/3046408001866664142?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="social-icon fa fa-instagram"></i></a>
+        <p link="true" >© <span id="year">2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLẽMStore. <br> All rights reserved.
+        </p>
       
-    <p>© 2023 HERMON SEL HAMMAH TETTEY VaxLemStore. <br> Tous droits réservés.
-    </p>
-  </footer>
+      </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+         // Get the current year
+         var currentYear = new Date().getFullYear();
+        
+         // Find the element in your footer where the year is displayed
+         var yearElement = document.getElementById('year');
+        
+         // Update the year in the footer
+         if (yearElement) {
+             yearElement.textContent = currentYear;
+         }
+        });
+        </script>
     <!-- scripts section -->
      <!-- text to speech contol -->
 <script>
